@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 // import { Nav } from "@/components/shared/Nav/Nav";
-// import SmoothScroll from "../components/shared/SmoothScroll/SmoothScroll";
+import SmoothScroll from "../components/shared/SmoothScroll/SmoothScroll";
 // import ReactQueryProvider from "./ReactQueryProvider";
 // import { Toaster } from "react-hot-toast";
 
@@ -52,7 +52,7 @@ export default function RootLayout({
           />
           <SmoothScroll>
             <Nav /> */}
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
         {/* </SmoothScroll> */}
         {/* </ReactQueryProvider> */}
       </body>
