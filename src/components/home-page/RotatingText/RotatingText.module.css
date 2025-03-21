@@ -10,8 +10,21 @@
 
 .svg {
   text-transform: uppercase;
-  fill: var(--green);
   user-select: none;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textPath {
+  fill: var(--green);
 }
 
 .olive {
@@ -38,7 +51,7 @@
 
 @media screen and (max-width: 568px) {
   .container {
-    width: 240;
+    width: 240px;
     height: 240px;
   }
 }

@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 // import { Nav } from "@/components/shared/Nav/Nav";
 import SmoothScroll from "../components/shared/SmoothScroll/SmoothScroll";
+import { Nav } from "@/components/shared/Nav/Nav";
 // import ReactQueryProvider from "./ReactQueryProvider";
 // import { Toaster } from "react-hot-toast";
 
@@ -52,7 +53,10 @@ export default function RootLayout({
           />
           <SmoothScroll>
             <Nav /> */}
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          <Nav />
+          {children}
+        </SmoothScroll>
         {/* </SmoothScroll> */}
         {/* </ReactQueryProvider> */}
       </body>

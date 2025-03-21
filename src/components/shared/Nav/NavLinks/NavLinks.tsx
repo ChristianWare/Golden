@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './NavLinks.module.css'
-import Logo from '../../Logo/Logo';
+// import Logo from '../../Logo/Logo';
 import Link from "next/link";
 // import SearchBar from '../../SearchBar/SearchBar';
 import { useEffect, useState } from "react";
@@ -92,7 +92,7 @@ export default function NavLinks() {
             <span className={styles.whiteBar}></span>
             <span className={styles.whiteBar}></span>
           </span>
-          <Logo />
+          {/* <Logo /> */}
         </div>
         <div className={styles.right}>
           <ul

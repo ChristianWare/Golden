@@ -7,9 +7,9 @@
   transform: translate(-50%, -50%);
   z-index: 9999;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--tan);
   padding-top: 5rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;

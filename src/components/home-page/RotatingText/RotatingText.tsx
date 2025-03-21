@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import styles from "./RotatingText.module.css";
 import { FC } from "react";
+import styles from "./RotatingText.module.css";
 import Bee from "../../../../public/icons/bee.svg";
 
 interface RotatingTextProps {
@@ -12,33 +11,10 @@ interface RotatingTextProps {
 }
 
 const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
-  const [rotationAngle, setRotationAngle] = useState(0);
-
-  useEffect(() => {
-    const scrollListener = () => {
-      const scrollY = window.scrollY;
-      // Adjust the rotation speed as needed by multiplying scrollY by an appropriate factor
-      const newRotationAngle = scrollY * 0.5; // You can change the factor
-      setRotationAngle(newRotationAngle);
-    };
-
-    window.addEventListener("scroll", scrollListener);
-
-    return () => {
-      window.removeEventListener("scroll", scrollListener);
-    };
-  }, []);
-
   return (
-      <div className={styles.container}>
-        <Bee className={styles.icon} />
-      <svg
-        className={styles.svg}
-        viewBox='0 0 100 100'
-        style={{
-          transform: `rotate(${rotationAngle}deg)`,
-        }}
-      >
+    <div className={styles.container}>
+      <Bee className={styles.icon} />
+      <svg className={styles.svg} viewBox='0 0 100 100'>
         <defs>
           <path
             id='circle'
@@ -51,7 +27,7 @@ const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
         </defs>
         <text font-size='7'>
           <textPath
-            className={`${styles.svg} ${styles[color]}`}
+            className={`${styles.textPath} ${styles[color]}`}
             xlinkHref='#circle'
           >
             {text}
@@ -61,4 +37,5 @@ const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
     </div>
   );
 };
+
 export default RotatingText;
