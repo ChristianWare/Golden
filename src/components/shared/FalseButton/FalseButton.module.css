@@ -11,7 +11,6 @@
   text-transform: uppercase;
   font-size: 1.6rem;
   white-space: nowrap;
-  border-radius: 4px;
   user-select: none;
   display: inline-block;
   padding: 1rem 5rem;
@@ -25,35 +24,42 @@
   width: 100%;
   transition: all 0.2s ease-in;
 }
+
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  width: 5px;
+  height: 5px;
+  background-color: var(--white);
+  position: absolute;
+  transition: all 0.2s ease-in;
+}
+
+.dot1 {
+  top: 5;
+  right: 5;
+}
+
+.dot2 {
+  bottom: 5;
+  right: 5;
+}
+
+.dot3 {
+  top: 5;
+  left: 5;
+}
+
+.dot4 {
+  bottom: 5;
+  left: 5;
+}
+
 .primary {
   color: var(--white);
   background-color: var(--red);
   border: 1px solid var(--red);
-}
-
-.primaryii {
-  color: var(--white);
-  background-color: var(--black);
-  border: 1px solid var(--black);
-  padding: 1rem 3rem;
-}
-
-.primaryii:hover {
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--black);
-}
-
-.primaryiii {
-  color: var(--black);
-  background-color: var(--white);
-  border: 1px solid var(--black);
-  padding: 1rem 3rem;
-}
-
-.primaryiii:hover {
-  background-color: var(--black);
-  color: var(--white);
 }
 
 .secondary {
@@ -69,43 +75,20 @@
 }
 
 .navBtn {
-  border-radius: 8px;
-  line-height: 1;
   padding: 1rem 3rem;
-  font-weight: 600;
   color: var(--white);
-  background-color: var(--red);
-
-
-
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
-.pulseWrapper:hover .pulse {
-  background-color: var(--white);
+.navBtn:hover {
+  background-color: transparent;
+  color: var(--blue);
 }
 
-.pulse {
-  width: 12px;
-  height: 12px;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  background-color: var(--white);
-  animation: pulse-animation 1.5s infinite;
-  position: relative;
-  /* margin-right: 1rem; */
-}
-
-@keyframes pulse-animation {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+.navBtn:hover .dot1,
+.navBtn:hover .dot2,
+.navBtn:hover .dot3,
+.navBtn:hover .dot4 {
+  background-color: var(--blue);
 }

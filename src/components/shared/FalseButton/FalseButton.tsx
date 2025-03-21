@@ -22,7 +22,10 @@ const FalseButton: FC<Props> = ({
       onClick={onClick}
       disabled={disabled}
     >
-      <span className={styles.pulse} />
+      <span className={styles.dot1}></span>
+      <span className={styles.dot2}></span>
+      <span className={styles.dot3}></span>
+      <span className={styles.dot4}></span>
       {text}
     </button>
   );

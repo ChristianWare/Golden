@@ -1,0 +1,31 @@
+.container {
+  background-color: var(--blue);
+  /* padding: 1rem; */
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+}
+
+.copy {
+  color: var(--white);
+  text-transform: uppercase;
+  display: block;
+  font-family: var(--SuisseIntlMonoRegular);
+  font-size: 1.2rem;
+}
+
+
+.container.hide {
+  transform: translate(0%, -50%);
+  opacity: 0;
+  width: 100%;
+}
+
+.container.show {
+  transform: translate(0%, 0%);
+  opacity: 1;
+  width: 100%;
+}
