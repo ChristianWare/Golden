@@ -2,6 +2,10 @@
   background-color: var(--tan);
 }
 
+.content {
+  margin-top: 5rem;
+}
+
 .top {
   display: flex;
   flex-direction: column;

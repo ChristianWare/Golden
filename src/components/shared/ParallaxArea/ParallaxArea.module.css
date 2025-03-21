@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 100%;
-  min-height: 60vh;
+  min-height: 55vh;
   position: relative;
   margin-bottom: 500px;
 }
@@ -27,7 +27,7 @@
 
 .content {
   width: 100%;
-  min-height: 60vh;
+  min-height: 55vh;
   padding: 4rem 0;
   z-index: 10;
 }
