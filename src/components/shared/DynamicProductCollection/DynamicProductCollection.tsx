@@ -4,7 +4,7 @@ import { getCollectionBySlug } from "@/wix-api/collections";
 import { queryProducts } from "@/wix-api/products";
 // import Product from "@/components/shared/Product/Product";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-import ProductCard from "@/components/shared/ProductCard/ProductCard";
+// import ProductCard from "@/components/shared/ProductCard/ProductCard";
 import Link from "next/link";
 import Arrow from "../../../../public/icons/arrow.svg";
 import FalseButton from "@/components/shared/FalseButton/FalseButton";
@@ -51,11 +51,11 @@ export default async function DynamicProductCollection({
         <LayoutWrapper>
           <div className={styles.content}>
             <h2 className={styles.heading}>{title} </h2>{" "}
-            <div className={styles.bottom}>
+            {/* <div className={styles.bottom}>
               {[...Array(6)].map((_, index) => (
                 <Product key={index} isLoading />
               ))}
-            </div>
+            </div> */}
           </div>
         </LayoutWrapper>
       </section>
@@ -69,9 +69,9 @@ export default async function DynamicProductCollection({
           <h2 className={styles.heading}>{title}</h2>
         </div>
         <div className={styles.content}>
-          {featuredProducts.items.map((product) => (
+          {/* {featuredProducts.items.map((product) => (
             <ProductCard key={product._id} product={product} />
-          ))}
+          ))} */}
           <Link
             href='/shop'
             className={`${styles.viewAllParent} ${styles[reverse]}`}
