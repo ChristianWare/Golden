@@ -8,10 +8,10 @@ import SmoothScroll from "../components/shared/SmoothScroll/SmoothScroll";
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | Thunder Trails`,
-    absolute: "Thunder Trails",
+    template: `%s | Golden Drips`,
+    absolute: "Golden Drips",
   },
-  description: "We sell the best bikes known to man.",
+  description: "We sell the best honey known to man.",
 };
 
 const PPFormulaConsensedExtrabold = localFont({

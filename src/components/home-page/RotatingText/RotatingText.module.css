@@ -1,0 +1,51 @@
+.container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  user-select: none;
+  padding: 1rem;
+}
+
+.svg {
+  text-transform: uppercase;
+  fill: var(--green);
+  user-select: none;
+}
+
+.olive {
+  fill: var(--olive);
+}
+
+.iconContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--green);
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  color: var(--black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    width: 240;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    width: 230px;
+    height: 230px;
+  }
+}
