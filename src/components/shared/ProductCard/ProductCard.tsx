@@ -17,35 +17,32 @@ export default function ProductCard({ product }: Props) {
     <article className={styles.container}>
       <Link href={`/products/${product?.slug}`} className={styles.link}>
         <div className={styles.top}>
+          <p className={styles.price}>{getFormattedPrice(product)}</p>
           <h3 className={styles.productName}>{product.name}</h3>
+
           <span className={styles.model}>{product.category}</span>
         </div>
         <div className={styles.bottom}>
           <WixImage
             mediaIdentifier={mainImage?.url}
             alt={mainImage?.altText}
-            width={454}
-            height={340}
+            width={300}
+            height={300}
             scaletofill={true}
             className={styles.img}
           />
-          <div className={styles.details}>
+          {/* <div className={styles.details}>
             <div className={styles.left}>
               <div className={styles.strikeThrough}>$4,250.00 USD</div>
               <div className={styles.price}>
-                {/* {product.stock > 0 ? (
+                {product.stock > 0 ? (
                   <>${product.price}</>
                 ) : (
                   <span className={styles.outofStock}>Out of Stock</span>
-                )} */}
-                <p className={styles.price}>{getFormattedPrice(product)}</p>
+                )}
               </div>
             </div>
-            <div className={styles.right}>
-              <div className={styles.btn}>new</div>
-              <div className={styles.btnii}>Sale</div>
-            </div>
-          </div>
+          </div> */}
         </div>
       </Link>
     </article>

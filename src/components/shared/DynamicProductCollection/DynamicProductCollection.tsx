@@ -5,9 +5,8 @@ import { queryProducts } from "@/wix-api/products";
 // import Product from "@/components/shared/Product/Product";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import ProductCard from "@/components/shared/ProductCard/ProductCard";
-import Link from "next/link";
-import Arrow from "../../../../public/icons/arrow.svg";
-import FalseButton from "@/components/shared/FalseButton/FalseButton";
+// import Link from "next/link";
+// import Arrow from "../../../../public/icons/arrow.svg";
 
 interface Props {
   title: string;
@@ -18,7 +17,7 @@ interface Props {
 export default async function DynamicProductCollection({
   title,
   category,
-  reverse = "",
+  // reverse = "",
 }: Props) {
   const wixClient = await getWixServerClient();
 
@@ -56,6 +55,7 @@ export default async function DynamicProductCollection({
                 <Product key={index} isLoading />
               ))}
             </div> */}
+            <p>No products to show</p>
           </div>
         </LayoutWrapper>
       </section>
@@ -72,18 +72,6 @@ export default async function DynamicProductCollection({
           {featuredProducts.items.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
-          <Link
-            href='/shop'
-            className={`${styles.viewAllParent} ${styles[reverse]}`}
-          >
-            <div className={styles.viewAllTop}>
-              <span className={styles.viewAllTitle}>View All</span>
-              <Arrow className={styles.arrow} />
-            </div>
-            <div className={styles.btnContainer}>
-              <FalseButton btnType='secondary' text='View Collection' />
-            </div>
-          </Link>
         </div>
       </LayoutWrapper>
     </section>
