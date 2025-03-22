@@ -53,14 +53,10 @@
 }
 
 .title {
-  font-size: 10rem;
+  font-size: 15rem;
   text-align: center;
   -webkit-text-stroke: 2px var(--brown);
   -webkit-text-fill-color: transparent;
-  /* letter-spacing: -1px; */
-  /* color: var(--text); */
-  /* text-decoration: underline; */
-  /* width: 70%; */
 }
 
 .copy {

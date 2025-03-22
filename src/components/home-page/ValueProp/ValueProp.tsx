@@ -1,5 +1,5 @@
-import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ValueProp.module.css";
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Arrow from "../../../../public/icons/arrow.svg";
 import Button from "@/components/shared/Button/Button";
 
