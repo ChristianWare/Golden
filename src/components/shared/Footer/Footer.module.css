@@ -2,6 +2,13 @@
   background-color: var(--yellow);
 }
 
+.headingOne {
+  font-size: 12vw;
+  text-align: center;
+  color: var(--yellow);
+  line-height: 0.5;
+}
+
 .content {
   border: 1px solid var(--brown);
   display: grid;

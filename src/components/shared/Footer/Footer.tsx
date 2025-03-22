@@ -97,48 +97,51 @@ const data2 = [
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
-      <LayoutWrapper>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <h3 className={styles.heading}>
-              We promise to send you cocktail recipes that wont get you drunk.
-            </h3>
-            <p className={styles.copy}>
-              A surprise for your first order by subscribing to the newsletter
-            </p>
-            <div className={styles.email}>
-              <span className={styles.span}>Email</span>
-              <Arrow className={styles.icon} />
-            </div>
-            <p className={styles.privacy}>I accept the privacy policy</p>
-          </div>
-          <div className={styles.right}>
-            {data.map((x) => (
-              <div className={styles.optionSection} key={x.id}>
-                <div className={styles.title}>{x.title}</div>
-                <ul className={styles.optionList}>
-                  {x.options.map((y) => (
-                    <li key={y.id} className={styles.option}>
-                      {y.option}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className={styles.bottom}>
-          <div className={styles.data2Container}>
-            {data2.map((x) => (
-              <p key={x.id} className={styles.option}>
-                {x.title}
+    <>
+      <h1 className={styles.headingOne}>Honey reinvented</h1>
+      <footer className={styles.container}>
+        <LayoutWrapper>
+          <div className={styles.content}>
+            <div className={styles.left}>
+              <h3 className={styles.heading}>
+                We promise to send you cocktail recipes that wont get you drunk.
+              </h3>
+              <p className={styles.copy}>
+                A surprise for your first order by subscribing to the newsletter
               </p>
-            ))}
+              <div className={styles.email}>
+                <span className={styles.span}>Email</span>
+                <Arrow className={styles.icon} />
+              </div>
+              <p className={styles.privacy}>I accept the privacy policy</p>
+            </div>
+            <div className={styles.right}>
+              {data.map((x) => (
+                <div className={styles.optionSection} key={x.id}>
+                  <div className={styles.title}>{x.title}</div>
+                  <ul className={styles.optionList}>
+                    {x.options.map((y) => (
+                      <li key={y.id} className={styles.option}>
+                        {y.option}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
-          <RotatingText text='Honey • Honey • Honey • Honey • Honey • Honey •' />
-        </div>
-      </LayoutWrapper>
-    </footer>
+          <div className={styles.bottom}>
+            <div className={styles.data2Container}>
+              {data2.map((x) => (
+                <p key={x.id} className={styles.option}>
+                  {x.title}
+                </p>
+              ))}
+            </div>
+            <RotatingText text='Honey • Honey • Honey • Honey • Honey • Honey •' />
+          </div>
+        </LayoutWrapper>
+      </footer>
+    </>
   );
 }
