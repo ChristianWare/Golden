@@ -25,7 +25,7 @@ const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
         a 37,37 0 1,1 -74,0'
           />
         </defs>
-        <text font-size='7.5'>
+        <text fontSize='7.5'>
           <textPath
             className={`${styles.textPath} ${styles[color]}`}
             xlinkHref='#circle'

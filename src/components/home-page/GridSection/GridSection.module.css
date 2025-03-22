@@ -21,12 +21,16 @@
 
 .top {
   margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading {
   color: var(--lightBlue);
   line-height: 1.125;
-  font-size: 7vw;
+  font-size: 7.5vw;
+  text-align: center;
 }
 
 .headingii {
@@ -250,7 +254,8 @@
 
 @media screen and (max-width: 768px) {
   .heading {
-    width: 100%;
+    font-size: 9vw;
+    text-align: center;
   }
 }
 
@@ -264,5 +269,9 @@
 
   .beeswax {
     font-size: 4.5rem;
+  }
+
+  .heading {
+    font-size: 10vw;
   }
 }

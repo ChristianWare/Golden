@@ -20,11 +20,12 @@
   margin: 5rem 10rem;
   border: 1px solid var(--olive);
   border-radius: 10px;
+  background-color: var(--yellow);
 }
 
 .card {
   padding: 3rem;
-  border-right: 1px solid var(--olive);
+  border-right: 1px solid var(--brown);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -48,12 +49,18 @@
   height: 4rem;
   transform: rotate(45deg);
   color: var(--brown);
+  display: none;
 }
 
 .title {
-  font-size: 1.6rem;
-  text-decoration: underline;
-  width: 70%;
+  font-size: 10rem;
+  text-align: center;
+  -webkit-text-stroke: 2px var(--brown);
+  -webkit-text-fill-color: transparent;
+  /* letter-spacing: -1px; */
+  /* color: var(--text); */
+  /* text-decoration: underline; */
+  /* width: 70%; */
 }
 
 .copy {

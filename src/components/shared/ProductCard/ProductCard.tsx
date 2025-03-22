@@ -19,7 +19,6 @@ export default function ProductCard({ product }: Props) {
         <div className={styles.top}>
           <p className={styles.price}>{getFormattedPrice(product)}</p>
           <h3 className={styles.productName}>{product.name}</h3>
-
           <span className={styles.model}>{product.category}</span>
         </div>
         <div className={styles.bottom}>
@@ -27,7 +26,7 @@ export default function ProductCard({ product }: Props) {
             mediaIdentifier={mainImage?.url}
             alt={mainImage?.altText}
             width={300}
-            height={300}
+            height={200}
             scaletofill={true}
             className={styles.img}
           />

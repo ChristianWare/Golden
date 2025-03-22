@@ -1,7 +1,7 @@
 .container {
   padding: 2rem;
   padding-top: 4rem;
-  background-color: var(--tan);
+  background-color: var(--teal);
   border: 1px solid var(--olive);
   border-radius: 10px;
   display: flex;
@@ -11,8 +11,6 @@
   gap: 2rem;
   width: 100%;
   height: 100%;
-  /* border-top: none; */
-  /* border-left: none; */
   transition: all 0.3s ease-in;
 }
 
@@ -45,7 +43,7 @@
   width: 70%;
   margin-bottom: 2rem;
   transition: all 0.2s ease-in;
-  color: var(--brown);
+  color: var(--tan);
 }
 
 .model {
@@ -78,6 +76,11 @@
 
 .container:hover .productName {
   text-decoration: underline;
+  color: var(--brown);
+}
+
+.container:hover .price {
+  color: var(--brown);
 }
 
 .details {
@@ -112,6 +115,8 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  color: var(--tan);
+  transition: all 0.2s ease-in;
 }
 
 .outofStock {
