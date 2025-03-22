@@ -1,5 +1,21 @@
 .container {
-  background-color: var(--tan);
+  background-color: var(--olive);
+  position: relative;
+}
+
+.container::after {
+  z-index: 5;
+  pointer-events: none;
+  content: "";
+  opacity: 0.05;
+  background: url("/gifs/grain.gif");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .heading {
@@ -12,6 +28,11 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   margin-top: 2rem;
+}
+
+.left,
+.right {
+  flex: 1;
 }
 
 .left {
@@ -28,10 +49,12 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  border: 2px solid var(--tan2);
-  border-radius: 12px;
+  border: 1px solid var(--brown);
+  border-radius: 10px;
   padding: 3rem 2rem;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .active {
@@ -39,17 +62,20 @@
   border-color: var(--purple);
 }
 
-.active .title {
-  color: var(--purple);
+.active {
+  background-color: var(--brown);
 }
+
+.active .title {
+  color: var(--olive);
+}
+
 .active .desc {
-  color: var(--gray3);
+  color: var(--olive);
 }
 
 .title {
-  font-size: 2rem;
-  font-family: var(--suisseReg);
-  text-transform: none;
+  color: var(--brown);
 }
 
 .desc {
@@ -59,10 +85,12 @@
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 600px;
+  border-radius: 10px;
 }
 
 .img {
+  border-radius: 10px;
   object-fit: cover;
   width: 100%;
   height: 100%;
