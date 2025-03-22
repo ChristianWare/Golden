@@ -1,0 +1,267 @@
+.container {
+  background-color: var(--blue);
+  position: relative;
+}
+
+.container::after {
+  z-index: 5;
+  pointer-events: none;
+  content: "";
+  opacity: 0.05;
+  background: url("/gifs/grain.gif");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.top {
+  margin-bottom: 3rem;
+}
+
+.heading {
+  color: var(--lightBlue);
+  line-height: 1.125;
+  font-size: 7vw;
+}
+
+.headingii {
+  color: var(--tan);
+  font-size: 4.5rem;
+}
+
+.copyii {
+  color: var(--tan);
+}
+
+.boxContainer {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "one two three"
+    "one four five";
+  grid-template-columns: 2.5fr 1fr 1fr;
+  padding-bottom: 1rem;
+  /* max-width: 1150px; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  /* border: 1px solid #d7f7e8; */
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 270px;
+  grid-area: one;
+  background-color: var(--teal);
+}
+
+.blend {
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.box1 {
+  grid-area: 2;
+  height: 100%;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box1B,
+.box2B,
+.box3B,
+.box4B,
+.box5B {
+  position: relative;
+  border-radius: 10px;
+}
+
+.img {
+  border-radius: 10px;
+}
+
+.box3,
+.box4B,
+.box2B {
+  color: var(--tan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.box3 {
+  background-color: var(--yellow);
+}
+
+.box3 h5 {
+  color: var(--brown);
+}
+
+.box4 {
+  background-color: var(--olive);
+  /* border: 2px solid var(--yellow); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.quintero {
+  color: var(--tan);
+}
+
+.boxContainer2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "oneB twoB threeB"
+    "fourB fiveB threeB";
+  grid-template-columns: 1fr 1fr 2.5fr;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box1B {
+  grid-area: twoB;
+}
+
+.box2B {
+  grid-area: oneB;
+  background-color: var(--yellow);
+}
+
+.boulders {
+  color: var(--brown);
+}
+
+.box3B {
+  grid-area: threeB;
+  grid-area: threeB;
+  height: 270px;
+}
+.box4B {
+  grid-area: fiveB;
+  background-color: var(--olive);
+  border: 1px solid var(--tan);
+}
+
+.troon {
+  color: var(--tan);
+}
+
+.box5B {
+  grid-area: fourB;
+}
+
+.golfCourse {
+  color: var(--tan);
+}
+
+.beeswax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 6rem;
+  color: var(--tan);
+  border-radius: 10px;
+  background-color: var(--lightBlue);
+}
+
+.btnContainerii {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 868px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box1B,
+  .box2B,
+  .box3B,
+  .box4B,
+  .box5B {
+    min-height: 150px;
+  }
+
+  .boxContainer {
+    grid-template-areas:
+      "one one"
+      "two three"
+      "four five";
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .box5 {
+    grid-column: span 2;
+  }
+  .boxContainer2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "threeB threeB"
+      "oneB twoB"
+      "fourB fiveB";
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 1rem 0;
+  }
+
+  .btnContainerii {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .heading {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainerii {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0rem;
+  }
+
+  .beeswax {
+    font-size: 4.5rem;
+  }
+}

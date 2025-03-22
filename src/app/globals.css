@@ -11,6 +11,7 @@
   --blue: #1d3d56;
   --lightBlue: #4a7b9c;
   --text: #545454;
+  --teal: #24645e;
 }
 
 * {
@@ -77,9 +78,8 @@ h4 {
 }
 
 h5 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  letter-spacing: -0.04em;
+  font-size: 3rem;
+  letter-spacing: 1px;
 }
 
 h6 {
