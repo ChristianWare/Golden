@@ -1,6 +1,7 @@
 .container {
   background-color: var(--blue);
   position: relative;
+  padding-top: 20rem;
   padding-bottom: 20rem;
 }
 
@@ -21,16 +22,17 @@
 
 .top {
   margin-bottom: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .heading {
-  color: var(--lightBlue);
+  color: var(--tan);
   line-height: 1.125;
   font-size: 7.5vw;
-  text-align: center;
+  width: 70%;
+  /* text-align: center; */
 }
 
 .headingii {
@@ -190,9 +192,9 @@
   justify-content: center;
   height: 100%;
   font-size: 6rem;
-  color: var(--tan);
+  color: var(--blue);
   border-radius: 10px;
-  background-color: var(--lightBlue);
+  background-color: var(--yellow);
 }
 
 .btnContainerii {
@@ -226,8 +228,13 @@
     margin-bottom: 1rem;
   }
 
+  .box1 {
+    order: -1;
+  }
+
   .box5 {
     grid-column: span 2;
+    display: none;
   }
   .boxContainer2 {
     display: grid;
@@ -248,7 +255,7 @@
 
 @media screen and (max-width: 1068px) {
   .heading {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -260,6 +267,18 @@
 }
 
 @media screen and (max-width: 568px) {
+  .boxContainer {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 1rem 0;
+    margin-bottom: 1rem;
+  }
+
   .btnContainerii {
     display: grid;
     width: 100%;

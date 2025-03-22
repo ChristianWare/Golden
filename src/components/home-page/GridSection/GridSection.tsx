@@ -1,9 +1,5 @@
 import styles from "./GridSection.module.css";
-import Image from "next/image";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-import Img1 from "../../../../public/images/about.jpg";
-import Img2 from "../../../../public/images/about.jpg";
-import Img3 from "../../../../public/images/about.jpg";
 
 const GridSection = () => {
   return (
@@ -12,8 +8,7 @@ const GridSection = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.heading}>
-              Founded by honey enthusiasts, we know the latest buzz from the
-              biggest beehives.
+              We know the latest buzz from the biggest beehives.
             </h2>
           </div>
           <div className={styles.bottom}>
@@ -27,50 +22,49 @@ const GridSection = () => {
                 </div>
               </div>
               <div className={styles.box1}>
-                <Image
+                {/* <Image
                   src={Img1}
                   alt='Nacho fries'
                   layout='fill'
                   objectFit='cover'
                   className={styles.img}
-                />
+                /> */}
+              </div>
+              <div className={styles.box4}>
+                <h5 className={styles.quintero}>Whipped Honey</h5>
               </div>
               <div className={styles.box2}>
-                <Image
+                {/* <Image
                   src={Img3}
                   alt='drone image 2'
                   layout='fill'
                   objectFit='cover'
                   className={styles.img}
-                />
+                /> */}
               </div>
               <div className={styles.box3}>
                 <h5>Manuka Honey</h5>
               </div>
 
-              <div className={styles.box4}>
-                <h5 className={styles.quintero}>Whipped Honey</h5>
-              </div>
-
               <div className={styles.box5}>
-                <Image
+                {/* <Image
                   src={Img1}
                   alt='drone image 3'
                   layout='fill'
                   objectFit='cover'
                   className={styles.img}
-                />
+                /> */}
               </div>
             </div>
             <div className={styles.boxContainer2}>
               <div className={styles.box1B}>
-                <Image
+                {/* <Image
                   src={Img2}
                   alt='drone image 4'
                   layout='fill'
                   objectFit='cover'
                   className={styles.img}
-                />
+                /> */}
               </div>
               <div className={styles.box2B}>
                 <h5 className={styles.boulders}>Pollen</h5>
@@ -82,13 +76,13 @@ const GridSection = () => {
                 <h5 className={styles.troon}>Nectar</h5>
               </div>
               <div className={styles.box5B}>
-                <Image
+                {/* <Image
                   src={Img3}
                   alt='drone image 6'
                   layout='fill'
                   objectFit='cover'
                   className={styles.img}
-                />
+                /> */}
               </div>
             </div>
           </div>
