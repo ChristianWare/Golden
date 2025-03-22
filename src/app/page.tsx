@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <ParallaxArea />
-      {/* <DynamicProductCollection
+      <DynamicProductCollection
         title='Our Best Sellers'
         category='best-sellers'
       />
@@ -23,7 +23,7 @@ export default function Home() {
       <CategorySection />
       <GridSection />
       <ReviewSection />
-      <Spotlight /> */}
+      <Spotlight />
       <Footer />
     </main>
   );
