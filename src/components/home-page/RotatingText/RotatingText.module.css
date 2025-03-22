@@ -24,7 +24,7 @@
 }
 
 .textPath {
-  fill: var(--green);
+  fill: var(--brown);
 }
 
 .olive {
@@ -42,7 +42,7 @@
 .icon {
   width: 5rem;
   height: 5rem;
-  color: var(--black);
+  color: var(--brown);
   position: absolute;
   top: 50%;
   left: 50%;

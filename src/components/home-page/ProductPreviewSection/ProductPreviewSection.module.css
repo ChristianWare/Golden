@@ -1,0 +1,93 @@
+.container {
+  background-color: var(--tan);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  margin-top: 2rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.dataBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 2px solid var(--tan2);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--tan2);
+  border-color: var(--purple);
+}
+
+.active .title {
+  color: var(--purple);
+}
+.active .desc {
+  color: var(--gray3);
+}
+
+.title {
+  font-size: 2rem;
+  font-family: var(--suisseReg);
+  text-transform: none;
+}
+
+.desc {
+  overflow: hidden;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .title,
+  .desc {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imgContainer {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .imgContainer {
+    height: 300px;
+  }
+}
