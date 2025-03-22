@@ -31,7 +31,7 @@
 .dot4 {
   width: 5px;
   height: 5px;
-  background-color: var(--white);
+  background-color: var(--tan);
   position: absolute;
   transition: all 0.2s ease-in;
 }
@@ -76,7 +76,7 @@
 
 .navBtn {
   padding: 1rem 3rem;
-  color: var(--white);
+  color: var(--tan);
   background-color: var(--blue);
   border: 1px solid var(--blue);
 }

@@ -1,0 +1,50 @@
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
+import styles from "./ValueProp.module.css";
+import Arrow from "../../../../public/icons/arrow.svg";
+import Button from "@/components/shared/Button/Button";
+
+const data = [
+  {
+    id: 1,
+    title: "A Bee's Knees: Simple Honey Solutions",
+    copy: "Tailored options for every honey business, from small-scale to large-scale operations.",
+  },
+  {
+    id: 2,
+    title: "Sweeten Your Workflow with Digital Honey Tracking",
+    copy: "Effortless inventory management and traceability for your honey products.",
+  },
+  {
+    id: 3,
+    title: "Buzzing Efficiency: Streamlined Honey Operations",
+    copy: "From hive to honey pot, we streamline your processes for maximum efficiency.",
+  },
+];
+
+export default function ValueProp() {
+  return (
+    <section className={styles.container}>
+      <LayoutWrapper>
+        <div className={styles.top}>
+          <h2 className={styles.heading}>
+            Pure and Simple <br /> Honey the Natural Way.{" "}
+          </h2>
+          <div className={styles.dataContainer}>
+            {data.map((x) => (
+              <div key={x.id} className={styles.card}>
+                <div className={styles.cardTop}>
+                  <Arrow className={styles.icon} />
+                  <div className={styles.title}>{x.title}</div>
+                </div>
+                <p className={styles.copy}>{x.copy}</p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.btnContainer}>
+            <Button href='/' text='Shop All Honey' btnType='brown' />
+          </div>{" "}
+        </div>
+      </LayoutWrapper>
+    </section>
+  );
+}

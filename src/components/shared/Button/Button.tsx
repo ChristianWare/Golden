@@ -29,6 +29,10 @@ const Button: FC<Props> = ({
         className={`${styles.btn} ${styles[btnType]}`}
         target={target}
       >
+        <span className={styles.dot1}></span>
+        <span className={styles.dot2}></span>
+        <span className={styles.dot3}></span>
+        <span className={styles.dot4}></span>
         {text || children}
       </Link>
     </button>

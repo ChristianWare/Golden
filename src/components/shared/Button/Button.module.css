@@ -13,7 +13,7 @@
   border-radius: 4px;
   user-select: none;
   display: inline-block;
-  padding: 1rem 5rem;
+  padding: 2rem 7rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -31,41 +31,27 @@
   border: 1px solid var(--red);
 }
 
-.primaryii {
-  color: var(--white);
-  background-color: var(--black);
-  border: 1px solid var(--black);
-  padding: 1rem 3rem;
+.brown {
+  background-color: var(--brown);
+  color: var(--tan);
+  border: 1px solid var(--brown);
 }
 
-.primaryii:hover {
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--black);
+.brown:hover {
+  background-color: var(--yellow);
+  color: var(--brown);
 }
 
-.primaryiii {
-  color: var(--black);
-  background-color: var(--white);
-  border: 1px solid var(--black);
-  padding: 1rem 3rem;
+.brown:hover {
+  background-color: var(--yellow);
+  color: var(--brown);
 }
 
-.primaryiii:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.secondary {
-  color: var(--white);
-  border: 1px solid var(--gold);
-  background-color: var(--darkGray);
-  border-radius: 50px;
-}
-
-.secondary:hover {
-  color: var(--black);
-  background-color: var(--white);
+.brown:hover .dot1,
+.brown:hover .dot2,
+.brown:hover .dot3,
+.brown:hover .dot4 {
+  background-color: var(--brown);
 }
 
 .navBtn {
@@ -78,4 +64,35 @@
   border: 2px solid var(--black);
   font-size: 1.2rem;
   border: 1px solid var(--gray);
+}
+
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  width: 5px;
+  height: 5px;
+  background-color: var(--tan);
+  position: absolute;
+  transition: all 0.2s ease-in;
+}
+
+.dot1 {
+  top: 5;
+  right: 5;
+}
+
+.dot2 {
+  bottom: 5;
+  right: 5;
+}
+
+.dot3 {
+  top: 5;
+  left: 5;
+}
+
+.dot4 {
+  bottom: 5;
+  left: 5;
 }

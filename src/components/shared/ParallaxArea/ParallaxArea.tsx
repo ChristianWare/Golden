@@ -1,8 +1,7 @@
 "use client";
 
-// import { ReactLenis } from "@studio-freight/react-lenis";
-import ParallaxImage from "@/components/shared/ParallaxImage/ParallaxImage";
 import styles from "./ParallaxArea.module.css";
+import ParallaxImage from "@/components/shared/ParallaxImage/ParallaxImage";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Img1 from "../../../../public/images/hero.jpg";
 

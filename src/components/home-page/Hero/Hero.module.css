@@ -18,9 +18,11 @@
   font-size: 2.8rem;
   text-align: center;
   width: 100%;
+  color: var(--brown);
 }
 
 .heading {
   font-size: 10vw;
   text-align: center;
+  color: var(--brown);
 }
