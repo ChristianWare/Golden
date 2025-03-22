@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import Arrow from "../../../../public/icons/arrow.svg";
 import LayoutWrapper from "../LayoutWrapper";
+import RotatingText from "@/components/home-page/RotatingText/RotatingText";
 
 const data = [
   {
@@ -9,23 +10,23 @@ const data = [
     options: [
       {
         id: 1.1,
-        option: "Option 1",
+        option: "JNPR range",
       },
       {
         id: 1.2,
-        option: "Option 2",
+        option: "Boxes",
       },
       {
         id: 1.3,
-        option: "Option 3",
+        option: "Sugar-free selection",
       },
       {
         id: 1.4,
-        option: "Option 4",
+        option: "Accessories & tonics",
       },
       {
         id: 1.5,
-        option: "Option 5",
+        option: "Recipe booklets",
       },
     ],
   },
@@ -75,6 +76,25 @@ const data = [
   },
 ];
 
+const data2 = [
+  {
+    id: 4,
+    title: "Privacy Policy",
+  },
+  {
+    id: 5,
+    title: "General Conditions of Sale",
+  },
+  {
+    id: 6,
+    title: "Cookies",
+  },
+  {
+    id: 7,
+    title: "Legal Notices",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className={styles.container}>
@@ -91,9 +111,32 @@ export default function Footer() {
               <span className={styles.span}>Email</span>
               <Arrow className={styles.icon} />
             </div>
-            <p>I accept the privacy policy</p>
+            <p className={styles.privacy}>I accept the privacy policy</p>
           </div>
-          <div className={styles.right}>data here</div>
+          <div className={styles.right}>
+            {data.map((x) => (
+              <div className={styles.optionSection} key={x.id}>
+                <div className={styles.title}>{x.title}</div>
+                <ul className={styles.optionList}>
+                  {x.options.map((y) => (
+                    <li key={y.id} className={styles.option}>
+                      {y.option}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.data2Container}>
+            {data2.map((x) => (
+              <p key={x.id} className={styles.option}>
+                {x.title}
+              </p>
+            ))}
+          </div>
+          <RotatingText text='Honey • Honey • Honey • Honey • Honey • Honey •' />
         </div>
       </LayoutWrapper>
     </footer>

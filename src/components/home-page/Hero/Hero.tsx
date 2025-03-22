@@ -8,7 +8,7 @@ export default function Hero() {
       {/* <LayoutWrapper> */}
       <div className={styles.content}>
         <div className={styles.top}>
-          <RotatingText text='Live mas • Live mas • Live mas • Live mas • Live mas • Live mas •' />
+          <RotatingText text='Honey • Honey • Honey • Honey • Honey • Honey •' />
           <span className={styles.span}>French non-alcoholic spirits</span>
           <h1 className={styles.heading}>Honey reinvented</h1>
         </div>
