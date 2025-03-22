@@ -12,6 +12,7 @@ const lerp = (start: number, end: number, factor: number) =>
 interface ParallaxImageProps {
   src: string | StaticImageData;
   alt: string;
+  borderRadius?: string;
 }
 
 interface BoundsRect {
@@ -19,7 +20,11 @@ interface BoundsRect {
   bottom: number;
 }
 
-export default function ParallaxImage({ src, alt }: ParallaxImageProps) {
+export default function ParallaxImage({
+  src,
+  alt,
+  borderRadius = "",
+}: ParallaxImageProps) {
   const imageRef = useRef<HTMLImageElement>(null);
   const bounds = useRef<BoundsRect | null>(null);
   const currentTranslateY = useRef<number>(0);
@@ -76,7 +81,7 @@ export default function ParallaxImage({ src, alt }: ParallaxImageProps) {
   });
 
   return (
-    <div className={styles.imgContainer}>
+    <div className={`${styles.imgContainer} ${styles[borderRadius]}`}>
       <img
         ref={imageRef}
         src={typeof src === "string" ? src : src.src}

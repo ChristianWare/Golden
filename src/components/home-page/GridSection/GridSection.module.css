@@ -1,6 +1,7 @@
 .container {
   background-color: var(--blue);
   position: relative;
+  padding-bottom: 20rem;
 }
 
 .container::after {

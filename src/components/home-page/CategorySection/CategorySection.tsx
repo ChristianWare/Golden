@@ -29,6 +29,7 @@ export default async function CategorySection() {
                       <ParallaxImage
                         src={collection.bannerImage}
                         alt='Parallax background'
+                        borderRadius='borderRadius'
                       />
                     </div>
                   ) : (
