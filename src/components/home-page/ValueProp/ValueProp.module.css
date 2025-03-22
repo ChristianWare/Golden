@@ -1,5 +1,6 @@
 .container {
-  background-color: var(--yellow);
+  background-color: var(--lightTan);
+  border-top: 1px solid var(--olive);
 }
 
 .dataContainer {
@@ -17,13 +18,13 @@
 
 .dataContainer {
   margin: 5rem 10rem;
-  border: 1px solid var(--black);
+  border: 1px solid var(--olive);
   border-radius: 10px;
 }
 
 .card {
   padding: 3rem;
-  border-right: 1px solid var(--brown);
+  border-right: 1px solid var(--olive);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -46,6 +47,7 @@
   width: 4rem;
   height: 4rem;
   transform: rotate(45deg);
+  color: var(--brown);
 }
 
 .title {
@@ -83,7 +85,7 @@
   }
 
   .card:nth-child(3) {
-    border-top: 1px solid var(--brown);
+    border-top: 1px solid var(--olive);
     width: 100%;
     grid-column: span 2;
   }
@@ -102,7 +104,7 @@
 
   .card {
     border-right: none;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--olive);
   }
 
   .card:nth-child(3) {
@@ -121,7 +123,6 @@
 
   .card:nth-child(3) {
     border-top: none;
-
     grid-column: span 1;
   }
 }

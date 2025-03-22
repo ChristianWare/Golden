@@ -1,3 +1,4 @@
+import CategorySection from "@/components/home-page/CategorySection/CategorySection";
 import Hero from "@/components/home-page/Hero/Hero";
 import ProductPreviewSection from "@/components/home-page/ProductPreviewSection/ProductPreviewSection";
 import ValueProp from "@/components/home-page/ValueProp/ValueProp";
@@ -15,6 +16,7 @@ export default function Home() {
       />
       <ValueProp />
       <ProductPreviewSection />
+      <CategorySection />
     </main>
   );
 }

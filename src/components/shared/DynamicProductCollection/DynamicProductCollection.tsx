@@ -2,11 +2,8 @@ import styles from "./DynamicProductCollection.module.css";
 import { getWixServerClient } from "@/lib/wix-client.server";
 import { getCollectionBySlug } from "@/wix-api/collections";
 import { queryProducts } from "@/wix-api/products";
-// import Product from "@/components/shared/Product/Product";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import ProductCard from "@/components/shared/ProductCard/ProductCard";
-// import Link from "next/link";
-// import Arrow from "../../../../public/icons/arrow.svg";
 
 interface Props {
   title: string;
@@ -17,8 +14,8 @@ interface Props {
 export default async function DynamicProductCollection({
   title,
   category,
-  // reverse = "",
-}: Props) {
+}: // reverse = "",
+Props) {
   const wixClient = await getWixServerClient();
 
   const collection = await getCollectionBySlug(wixClient, `${category}`);
@@ -33,6 +30,7 @@ export default async function DynamicProductCollection({
                 <Product key={index} isLoading />
               ))}
             </div> */}
+            loading....
           </div>
         </LayoutWrapper>
       </section>

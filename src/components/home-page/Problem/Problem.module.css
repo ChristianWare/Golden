@@ -1,0 +1,131 @@
+.container {
+  background-color: var(--blue);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.heading {
+  margin-right: auto;
+  color: var(--lightBlue);
+}
+
+
+
+.headingii {
+  color: var(--white);
+  line-height: 120%;
+}
+
+.falseBtnContainerii {
+  margin-top: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-right: auto;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 7rem;
+  padding: 3rem;
+  background-color: var(--tan2);
+  border-radius: 10px;
+}
+
+.indexInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.description {
+  opacity: 0.7;
+}
+
+.icon {
+  color: var(--green);
+  opacity: 0.6;
+}
+
+.card:nth-child(2) {
+  background-color: var(--purple);
+}
+
+.card:nth-child(2) .title,
+.card:nth-child(2) .description {
+  color: var(--white);
+}
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .bottom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .top {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    text-align: center;
+    width: 100%;
+  }
+
+  .headingii {
+    text-align: center;
+    width: 100%;
+  }
+
+  .problemContainer {
+    flex-direction: column;
+  }
+
+  .pattern {
+    width: 100%;
+  }
+
+  .card {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

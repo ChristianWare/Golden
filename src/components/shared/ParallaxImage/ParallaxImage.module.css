@@ -4,6 +4,7 @@
   height: 100%;
   object-fit: cover;
   will-change: transform;
+  border-radius: 10px;
 }
 
 .imgContainer {
@@ -14,4 +15,5 @@
   height: 100%;
   overflow: hidden;
   will-change: transform;
+  border-radius: 10px;
 }

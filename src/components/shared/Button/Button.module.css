@@ -25,47 +25,6 @@
   transition: all 0.2s ease-in;
 }
 
-.primary {
-  color: var(--white);
-  background-color: var(--red);
-  border: 1px solid var(--red);
-}
-
-.brown {
-  background-color: var(--brown);
-  color: var(--tan);
-  border: 1px solid var(--brown);
-}
-
-.brown:hover {
-  background-color: var(--yellow);
-  color: var(--brown);
-}
-
-.brown:hover {
-  background-color: var(--yellow);
-  color: var(--brown);
-}
-
-.brown:hover .dot1,
-.brown:hover .dot2,
-.brown:hover .dot3,
-.brown:hover .dot4 {
-  background-color: var(--brown);
-}
-
-.navBtn {
-  border-radius: 8px;
-  line-height: 1;
-  padding: 1.7rem 5rem;
-  font-weight: 600;
-  color: var(--white);
-  background-color: var(--blue);
-  border: 2px solid var(--black);
-  font-size: 1.2rem;
-  border: 1px solid var(--gray);
-}
-
 .dot1,
 .dot2,
 .dot3,
@@ -95,4 +54,58 @@
 .dot4 {
   bottom: 5;
   left: 5;
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.brown {
+  background-color: var(--brown);
+  color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.brown:hover {
+  background-color: var(--yellow);
+  color: var(--brown);
+}
+
+.brown:hover .dot1,
+.brown:hover .dot2,
+.brown:hover .dot3,
+.brown:hover .dot4 {
+  background-color: var(--brown);
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--tan);
+  border: 1px solid var(--blue);
+}
+
+.blue:hover {
+  background-color: var(--tan);
+  color: var(--blue);
+}
+
+.blue:hover .dot1,
+.blue:hover .dot2,
+.blue:hover .dot3,
+.blue:hover .dot4 {
+  background-color: var(--blue);
+}
+
+.navBtn {
+  border-radius: 8px;
+  line-height: 1;
+  padding: 1.7rem 5rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 2px solid var(--black);
+  font-size: 1.2rem;
+  border: 1px solid var(--gray);
 }

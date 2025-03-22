@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--olive);
+  background-color: var(--yellow);
   position: relative;
 }
 
@@ -26,7 +26,7 @@
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -67,11 +67,11 @@
 }
 
 .active .title {
-  color: var(--olive);
+  color: var(--yellow);
 }
 
 .active .desc {
-  color: var(--olive);
+  color: var(--yellow);
 }
 
 .title {
