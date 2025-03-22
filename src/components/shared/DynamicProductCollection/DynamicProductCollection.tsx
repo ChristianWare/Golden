@@ -4,7 +4,7 @@ import { getCollectionBySlug } from "@/wix-api/collections";
 import { queryProducts } from "@/wix-api/products";
 // import Product from "@/components/shared/Product/Product";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-// import ProductCard from "@/components/shared/ProductCard/ProductCard";
+import ProductCard from "@/components/shared/ProductCard/ProductCard";
 import Link from "next/link";
 import Arrow from "../../../../public/icons/arrow.svg";
 import FalseButton from "@/components/shared/FalseButton/FalseButton";
@@ -18,7 +18,7 @@ interface Props {
 export default async function DynamicProductCollection({
   title,
   category,
-  reverse='',
+  reverse = "",
 }: Props) {
   const wixClient = await getWixServerClient();
 
@@ -69,9 +69,9 @@ export default async function DynamicProductCollection({
           <h2 className={styles.heading}>{title}</h2>
         </div>
         <div className={styles.content}>
-          {/* {featuredProducts.items.map((product) => (
+          {featuredProducts.items.map((product) => (
             <ProductCard key={product._id} product={product} />
-          ))} */}
+          ))}
           <Link
             href='/shop'
             className={`${styles.viewAllParent} ${styles[reverse]}`}
