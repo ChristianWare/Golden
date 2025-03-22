@@ -6,6 +6,7 @@ import ReviewSection from "@/components/home-page/ReviewSection/ReviewSection";
 import Spotlight from "@/components/home-page/Spotlight/Spotlight";
 import ValueProp from "@/components/home-page/ValueProp/ValueProp";
 import DynamicProductCollection from "@/components/shared/DynamicProductCollection/DynamicProductCollection";
+import Footer from "@/components/shared/Footer/Footer";
 import ParallaxArea from "@/components/shared/ParallaxArea/ParallaxArea";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <GridSection />
       <ReviewSection />
       <Spotlight />
+      <Footer />
     </main>
   );
 }
