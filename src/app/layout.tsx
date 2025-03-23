@@ -4,6 +4,8 @@ import localFont from "next/font/local";
 // import { Nav } from "@/components/shared/Nav/Nav";
 import SmoothScroll from "../components/shared/SmoothScroll/SmoothScroll";
 import { Nav } from "@/components/shared/Nav/Nav";
+import Footer from "@/components/shared/Footer/Footer";
+import Spotlight from "@/components/home-page/Spotlight/Spotlight";
 // import ReactQueryProvider from "./ReactQueryProvider";
 // import { Toaster } from "react-hot-toast";
 
@@ -56,6 +58,9 @@ export default function RootLayout({
         <SmoothScroll>
           <Nav />
           {children}
+          <Spotlight />
+
+          <Footer />
         </SmoothScroll>
         {/* </SmoothScroll> */}
         {/* </ReactQueryProvider> */}

@@ -22,9 +22,11 @@ export default function Fundamentals() {
               which is the characteristic ingredient of Gin, and the products of
               the JNPR range.
               <br />
+              <br />
               60 first plants were planted in 2020, knowing that the shrubs take
               3 years to produce the first berries. The project grows with the
               brand and 500 new plants were planted in March 2023.
+              <br />
               <br />
               The project will not be self-sufficient at this stage. We ensure
               the quality and future supply of some of our berries. For our
