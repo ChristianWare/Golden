@@ -1,0 +1,42 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  color: var(--brown);
+}
+
+.span {
+  display: block;
+  font-size: 17vw;
+}
+
+.icon {
+  color: var(--yellow);
+  width: 50rem;
+  height: 50rem;
+}
+
+.copy {
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text);
+}
+
+@media screen and (max-width: 1068px) {
+  .copy {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .copy {
+    width: 100%;
+  }
+}
