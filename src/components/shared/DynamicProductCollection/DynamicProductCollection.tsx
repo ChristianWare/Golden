@@ -4,6 +4,7 @@ import { getCollectionBySlug } from "@/wix-api/collections";
 import { queryProducts } from "@/wix-api/products";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import ProductCard from "@/components/shared/ProductCard/ProductCard";
+import Burst from "../../../../public/icons/burst.svg";
 
 interface Props {
   title: string;
@@ -65,6 +66,7 @@ Props) {
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={styles.heading}>{title}</h2>
+          <Burst className={styles.icon} />
         </div>
         <div className={styles.content}>
           {featuredProducts.items.map((product) => (

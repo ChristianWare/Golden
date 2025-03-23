@@ -2,7 +2,7 @@
 
 import styles from "./RotatingText.module.css";
 import { FC } from "react";
-import Bee from "../../../../public/icons/bee.svg";
+import Bee from "../../../../public/icons/bee2.svg";
 
 interface RotatingTextProps {
   text: string;

@@ -25,7 +25,7 @@ export default function AboutHero() {
           <RotatingText
             text='Honey • Honey • Honey • Honey • Honey • Honey •'
             color='lightBlue'
-            iconColor='lightBlue'
+            iconColor='blueIcon'
           />
           <div className={styles.dataBox}>
             {data.map((x) => (

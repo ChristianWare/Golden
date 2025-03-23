@@ -40,8 +40,8 @@
 }
 
 .icon {
-  width: 5rem;
-  height: 5rem;
+  width: 12rem;
+  height: 12rem;
   color: var(--brown);
   position: absolute;
   top: 50%;
@@ -51,6 +51,10 @@
 
 .lightBlue {
   fill: var(--lightBlue);
+  color: var(--lightBlue);
+}
+
+.blueIcon {
   color: var(--lightBlue);
 }
 
