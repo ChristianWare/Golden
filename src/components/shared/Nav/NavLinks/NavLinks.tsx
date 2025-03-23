@@ -10,6 +10,10 @@ interface NavProps {
 
 const navItems = [
   {
+    text: "Home",
+    href: "/",
+  },
+  {
     text: "shop",
     href: "/shop",
   },

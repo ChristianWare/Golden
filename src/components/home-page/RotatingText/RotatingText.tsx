@@ -1,19 +1,24 @@
 "use client";
 
-import { FC } from "react";
 import styles from "./RotatingText.module.css";
+import { FC } from "react";
 import Bee from "../../../../public/icons/bee.svg";
 
 interface RotatingTextProps {
   text: string;
   showArrow?: boolean;
   color?: string;
+  iconColor?: string;
 }
 
-const RotatingText: FC<RotatingTextProps> = ({ text, color = "" }) => {
+const RotatingText: FC<RotatingTextProps> = ({
+  text,
+  color = "",
+  iconColor = "",
+}) => {
   return (
     <div className={styles.container}>
-      <Bee className={styles.icon} />
+      <Bee className={`${styles.icon} ${styles[iconColor]}`} />
       <svg className={styles.svg} viewBox='0 0 100 100'>
         <defs>
           <path
