@@ -1,0 +1,90 @@
+.container {
+  padding-top: 15rem;
+  background-color: var(--yellow);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.icon {
+  color: var(--brown);
+  width: 15rem;
+  height: 15rem;
+}
+
+.heading {
+  color: var(--brown);
+  border-bottom: 1px solid var(--brown);
+  font-size: 2rem;
+}
+
+.copyii {
+  margin-top: 2rem;
+  color: var(--brown);
+  text-transform: uppercase;
+}
+
+.mapContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3rem;
+  margin-top: 5rem;
+}
+
+.card {
+  border-bottom: 1px dashed var(--brown);
+  padding-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: var(--brown);
+}
+
+.copy {
+  color: var(--brown);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1068px) {
+  .imgContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .imgContainer {
+    width: 100%;
+    height: 500px;
+  }
+}
