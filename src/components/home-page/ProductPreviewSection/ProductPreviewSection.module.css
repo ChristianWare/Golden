@@ -55,6 +55,11 @@
   cursor: pointer;
   width: 100%;
   height: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.dataBox:hover {
+  background-color: var(--brown);
 }
 
 .active {
@@ -76,10 +81,17 @@
 
 .title {
   color: var(--brown);
+  transition: all 0.2s ease-in;
 }
 
 .desc {
   overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.dataBox:hover .title,
+.dataBox:hover .desc {
+  color: var(--yellow);
 }
 
 .imgContainer {

@@ -118,10 +118,23 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 6rem;
   }
+
+  .copy {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 568px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .copy {
+    width: 100%;
+  }
+
+  .btnContainer {
+    display: grid;
+    width: 100%;
   }
 }

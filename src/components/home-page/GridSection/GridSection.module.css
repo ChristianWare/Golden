@@ -22,9 +22,6 @@
 
 .top {
   margin-bottom: 3rem;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .heading {
@@ -32,7 +29,6 @@
   line-height: 1.125;
   font-size: 7.5vw;
   width: 70%;
-  /* text-align: center; */
 }
 
 .headingii {
@@ -52,11 +48,7 @@
     "one four five";
   grid-template-columns: 2.5fr 1fr 1fr;
   padding-bottom: 1rem;
-  /* max-width: 1150px; */
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  top: 10px;
 }
 
 .topContainer {
@@ -65,7 +57,6 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* border: 1px solid #d7f7e8; */
   border-radius: 10px;
   padding: 1rem;
   min-height: 270px;
@@ -102,8 +93,12 @@
   border-radius: 10px;
 }
 
-.img {
-  border-radius: 10px;
+.box1 {
+  grid-area: two;
+}
+
+.box2 {
+  grid-area: two;
 }
 
 .box3,
@@ -118,16 +113,17 @@
 }
 
 .box3 {
-  background-color: var(--yellow);
+  background-color: var(--teal);
 }
 
-.box3 h5 {
-  color: var(--brown);
+.smallHeadingDark {
+  color: var(--blue);
+  text-align: center;
 }
 
 .box4 {
-  background-color: var(--olive);
-  /* border: 2px solid var(--yellow); */
+  grid-area: three;
+  background-color: var(--teal);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,8 +131,9 @@
   padding: 3rem;
 }
 
-.quintero {
+.smallHeading {
   color: var(--tan);
+  text-align: center;
 }
 
 .boxContainer2 {
@@ -168,10 +165,10 @@
   grid-area: threeB;
   height: 270px;
 }
+
 .box4B {
   grid-area: fiveB;
-  background-color: var(--olive);
-  border: 1px solid var(--tan);
+  background-color: var(--yellow);
 }
 
 .troon {
@@ -204,6 +201,12 @@
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 1068px) {
+  .heading {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 868px) {
   .box1,
   .box2,
@@ -225,7 +228,6 @@
       "four five";
     grid-template-columns: repeat(2, 1fr);
     padding: 0 0 1rem 0;
-    margin-bottom: 1rem;
   }
 
   .box1 {
@@ -253,12 +255,6 @@
   }
 }
 
-@media screen and (max-width: 1068px) {
-  .heading {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .heading {
     font-size: 9vw;
@@ -274,9 +270,24 @@
       "three"
       "four"
       "five";
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 0 1rem 0;
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .boxContainer2 {
+    grid-template-areas:
+      "oneB"
+      "twoB"
+      "threeB"
+      "fourB"
+      "fiveB";
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box2,
+  .box1,
+  .box1B,
+  .box5B {
+    display: none;
   }
 
   .btnContainerii {

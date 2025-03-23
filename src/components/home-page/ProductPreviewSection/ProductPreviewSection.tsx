@@ -7,6 +7,7 @@ import Img1 from "../../../../public/images/about.jpg";
 import Img2 from "../../../../public/images/aboutiii.jpg";
 import Img3 from "../../../../public/images/contactiii.jpeg";
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const data = [
   {
@@ -27,7 +28,6 @@ const data = [
     title: "RHHM No. 1",
     desc: "Discover our new alcohol-free spirit",
   },
-
 ];
 
 export default function ProductPreviewSection() {
@@ -54,14 +54,24 @@ export default function ProductPreviewSection() {
             ))}
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
-              <Image
-                src={data[activeIndex].animation}
-                alt=''
-                title=''
-                className={styles.img}
-              />
-            </div>
+            <AnimatePresence mode='wait'>
+              <motion.div
+                className={styles.imgContainer}
+                key={activeIndex}
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              >
+                <Image
+                  src={data[activeIndex].animation}
+                  alt=''
+                  title=''
+                  className={styles.img}
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </LayoutWrapper>
