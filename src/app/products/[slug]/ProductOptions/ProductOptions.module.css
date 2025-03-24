@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.legend {
+  font-family: var(--barlowCondensed);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.optionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.optionChoice {
+  position: relative;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.radioLabel span {
+  display: block;
+}
+
+.radioLabel:hover {
+  border-color: #888;
+}
+
+.radioInput:checked + .radioLabel {
+  border-color: black;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.radioInput:disabled + .radioLabel {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* New styles for choice descriptions */
+.choiceDescription {
+  position: absolute;
+  font-size: 0.75rem;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Make size options wider than color options for better text display */
+.sizeLabel {
+  width: 50px;
+}
+
+.colorSwatch {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+.imageGallery {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.imageGallery img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.colorCircle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

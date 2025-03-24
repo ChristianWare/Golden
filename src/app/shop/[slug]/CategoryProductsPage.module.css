@@ -1,18 +1,24 @@
+.container {
+  padding-top: 5rem;
+}
+
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 3rem;
-  
 }
 
 .heading {
   margin-bottom: 3rem;
+  text-align: center;
+  color: var(--brown);
 }
 
 .products {
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
   border-top: 1px solid var(--border);
   border-left: 1px solid var(--border);
 }

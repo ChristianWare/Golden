@@ -23,7 +23,7 @@ export default async function ProductResults({
   priceMax,
   sort,
 }: ProductResultsProps) {
-  // const pageSize = 8;
+  // const pageSize = 2;
 
   const products = await queryProducts(await getWixServerClient(), {
     q,
@@ -38,12 +38,15 @@ export default async function ProductResults({
   if (page > (products.totalPages || 1)) notFound();
 
   return (
-    <section>
-      <h2 className={styles.heading}>
-        {/* {products.totalCount}{" "}
+    <section className={styles.container}>
+      <div className={styles.top}>
+        <h1 className={styles.heading}>
+          {/* {products.totalCount}{" "}
         {products.totalCount === 1 ? "product" : "products"} found */}
-        Products
-      </h2>
+          Products
+        </h1>
+        <span className={styles.span}>See all of our Honey here</span>
+      </div>
       <CollectionGroup />
       <div className={styles.content}>
         {/* <div>Filter system here...</div> */}
@@ -53,12 +56,12 @@ export default async function ProductResults({
           ))}
         </div>
       </div>
-      <h2 className={styles.headingii}>
+      {/* <h2 className={styles.headingii}>
         You have viewed{" "}
         <span className={styles.count}>{products.totalCount} </span>
         of <span className={styles.count}>{products.totalCount} </span>
         {products.totalCount === 1 ? "product" : "products"}
-      </h2>
+      </h2> */}
     </section>
   );
 }

@@ -1,16 +1,15 @@
-import Footer from "@/components/shared/Footer/Footer";
 import styles from "./CategoryProductsPage.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import ProductCard from "@/components/shared/ProductCard/ProductCard";
-import SignUp from "@/components/shared/SignUp/SignUp";
-import CollectionGroup from "@/components/shop-page/CollectionGroup/CollectionGroup";
+// import SignUp from "@/components/shared/SignUp/SignUp";
+import CollectionGroup from "@/components/shared/CollectionGroup/CollectionGroup";
 import { getWixServerClient } from "@/lib/wix-client.server";
 import { getCollectionBySlug } from "@/wix-api/collections";
 import { queryProducts } from "@/wix-api/products";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import LoadingPage from "@/app/loading";
+// import LoadingPage from "@/app/loading";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -55,15 +54,14 @@ export default async function CategoryProductsPage({ params }: PageProps) {
     <main>
       <LayoutWrapper>
         <div className={styles.container}>
-          <h2 className={styles.heading}>{categoryName}</h2>
+          <h1 className={styles.heading}>{categoryName}</h1>
           <CollectionGroup currentSlug={slug} />
-          <Suspense fallback={<LoadingPage />}>
+          <Suspense fallback='Loading...'>
             <Products collectionId={collection._id} />
           </Suspense>
         </div>
       </LayoutWrapper>
-      <SignUp />
-      <Footer />
+
     </main>
   );
 }
@@ -87,12 +85,12 @@ async function Products({ collectionId }: ProductProps) {
           <ProductCard key={product._id} product={product} />
         ))}
       </div>
-      <h2 className={styles.headingii}>
+      {/* <h2 className={styles.headingii}>
         You have viewed{" "}
         <span className={styles.count}>{collectionProducts.length}</span>
         of <span className={styles.count}>{collectionProducts.length}</span>
         products{" "}
-      </h2>
+      </h2> */}
     </>
   );
 }

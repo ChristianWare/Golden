@@ -7,20 +7,17 @@ interface CollectionGroupProps {
   currentSlug?: string;
 }
 
-
 export default async function CollectionGroup({
   currentSlug,
 }: CollectionGroupProps) {
   const wixClient = await getWixServerClient();
   const collections = await getCollections(wixClient);
 
-  
-
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <Button
-          btnType={!currentSlug ? "primary" : "primaryiii"}
+          btnType={!currentSlug ? "yellow" : "brown"}
           text='All Products'
           href='/shop'
         />{" "}
@@ -28,7 +25,7 @@ export default async function CollectionGroup({
           <Button
             href={`/shop/${collection.slug}`}
             key={collection._id}
-            btnType={collection.slug === currentSlug ? "primary" : "primaryiii"}
+            btnType={collection.slug === currentSlug ? "yellow" : "brown"}
           >
             {collection.name}
           </Button>

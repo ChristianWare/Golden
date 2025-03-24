@@ -80,6 +80,31 @@
   background-color: var(--brown);
 }
 
+.yellow {
+  background-color: var(--yellow);
+  border: 1px solid var(--brown);
+  color: var(--brown);
+}
+
+.yellow:hover {
+  background-color: var(--brown);
+  color: var(--yellow);
+}
+
+.yellow .dot1,
+.yellow .dot2,
+.yellow .dot3,
+.yellow .dot4 {
+  background-color: var(--brown);
+}
+
+.yellow:hover .dot1,
+.yellow:hover .dot2,
+.yellow:hover .dot3,
+.yellow:hover .dot4 {
+  background-color: var(--yellow);
+}
+
 .blue {
   background-color: var(--blue);
   color: var(--tan);
