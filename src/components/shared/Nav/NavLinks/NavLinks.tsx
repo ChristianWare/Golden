@@ -66,6 +66,9 @@ const NavLinks = ({ color = "" }: NavProps) => {
             : `${styles.navMenu} ${styles.active}`
         }
       >
+        {/* <li>
+          <Bee className={styles.icon} />
+        </li> */}
         {navItems.map((navItem, index) => (
           <li
             key={index}

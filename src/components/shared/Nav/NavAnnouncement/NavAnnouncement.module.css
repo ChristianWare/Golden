@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in;
+  margin-top: -.4rem;
 }
 
 .copy {

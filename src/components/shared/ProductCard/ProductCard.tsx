@@ -20,8 +20,8 @@ export default function ProductCard({ product }: Props) {
           <WixImage
             mediaIdentifier={mainImage?.url}
             alt={mainImage?.altText}
-            width={200}
-            height={300}
+            width={700}
+            height={900}
             // aspect ration is crucial here...
             scaletofill={true}
             className={styles.img}

@@ -9,6 +9,8 @@ import { getWixServerClient } from "@/lib/wix-client.server";
 // import Footer from "@/components/shared/Footer/Footer";
 import ParallaxArea from "@/components/shared/ParallaxArea/ParallaxArea";
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
+import ValueProp from "@/components/home-page/ValueProp/ValueProp";
+import ReviewSection from "@/components/home-page/ReviewSection/ReviewSection";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -56,6 +58,8 @@ export default async function ProductPage({ params }: PageProps) {
     <main>
       <ProductDetails product={product} />
       <ParallaxArea />
+      <ValueProp />
+      <ReviewSection />
       <RelatedProducts productId={product._id} />
     </main>
   );

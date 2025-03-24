@@ -8,6 +8,7 @@ import Footer from "@/components/shared/Footer/Footer";
 import Spotlight from "@/components/home-page/Spotlight/Spotlight";
 import ReactQueryProvider from "./ReactQueryProvider";
 import { Toaster } from "react-hot-toast";
+import { ModalProvider } from "@/context/ModalContext";
 
 export const metadata: Metadata = {
   title: {
@@ -53,14 +54,15 @@ export default function RootLayout({
               },
             }}
           />
-        
-        <SmoothScroll>
-          <Nav />
-          {children}
-          <Spotlight />
 
-          <Footer />
-        </SmoothScroll>
+          <ModalProvider>
+            <SmoothScroll>
+              <Nav />
+              {children}
+              <Spotlight />
+              <Footer />
+            </SmoothScroll>
+          </ModalProvider>
         </ReactQueryProvider>
       </body>
     </html>

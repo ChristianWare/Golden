@@ -68,7 +68,6 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
     }
   };
 
-  console.log(product);
 
   return (
     <>

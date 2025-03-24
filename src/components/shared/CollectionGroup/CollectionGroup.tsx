@@ -17,7 +17,7 @@ export default async function CollectionGroup({
     <section className={styles.container}>
       <div className={styles.content}>
         <Button
-          btnType={!currentSlug ? "yellow" : "brown"}
+          btnType={!currentSlug ? "yellow" : "tan"}
           text='All Products'
           href='/shop'
         />{" "}
@@ -25,7 +25,7 @@ export default async function CollectionGroup({
           <Button
             href={`/shop/${collection.slug}`}
             key={collection._id}
-            btnType={collection.slug === currentSlug ? "yellow" : "brown"}
+            btnType={collection.slug === currentSlug ? "yellow" : "tan"}
           >
             {collection.name}
           </Button>

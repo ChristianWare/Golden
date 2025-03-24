@@ -123,6 +123,47 @@
   background-color: var(--blue);
 }
 
+.tan {
+  background-color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.tan .dot1,
+.tan .dot2,
+.tan .dot3,
+.tan .dot4 {
+  background-color: var(--brown);
+}
+
+.tan:hover {
+  background-color: var(--yellow);
+}
+
+.olive {
+  background-color: var(--olive);
+  color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.navBtn {
+  padding: 1rem 3rem;
+  color: var(--tan);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.navBtn:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.navBtn:hover .dot1,
+.navBtn:hover .dot2,
+.navBtn:hover .dot3,
+.navBtn:hover .dot4 {
+  background-color: var(--blue);
+}
+
 .navBtn {
   border-radius: 8px;
   line-height: 1;
