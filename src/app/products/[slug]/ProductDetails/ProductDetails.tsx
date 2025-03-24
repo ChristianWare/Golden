@@ -10,15 +10,14 @@ import ProductOptions from "../ProductOptions/ProductOptions";
 import RotatingText from "@/components/home-page/RotatingText/RotatingText";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import DynamicParallax from "@/components/shared/DynamicParallax/DynamicParallax";
-// import DynamicParallax from "@/components/shared/DynamicParallax/DynamicParallax";
-// import AddToCartButton from "@/components/shared/AddToCartButton/AddToCartButton";
+import AddToCartButton from "@/components/shared/AddToCartButton/AddToCartButton";
+import CollapsibleSection from "@/components/shared/CollapsibleSection/CollapsibleSection";
 
 interface ProductDetailsProps {
   product: products.Product;
 }
 
 export default function ProductDetails({ product }: ProductDetailsProps) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [quantity, setQuantity] = useState(1);
   const [showMore, setShowMore] = useState(false);
 
@@ -57,17 +56,17 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
   const availableQuantityExceeded =
     !!availableQuantity && quantity > availableQuantity;
 
-  // const increaseQuantity = () => {
-  //   if (quantity < availableQuantity) {
-  //     setQuantity(quantity + 1);
-  //   }
-  // };
+  const increaseQuantity = () => {
+    if (quantity < availableQuantity) {
+      setQuantity(quantity + 1);
+    }
+  };
 
-  // const decreaseQuantity = () => {
-  //   if (quantity > 1) {
-  //     setQuantity(quantity - 1);
-  //   }
-  // };
+  const decreaseQuantity = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
 
   console.log(product);
 
@@ -144,21 +143,23 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                     )}
                   <div className={styles.quantityInfoBox}>
                     <div className={styles.quantityInfo}>
-                      {/* <div className={styles.quantitySelector}>
-                  <button
-                    onClick={decreaseQuantity}
-                    className={styles.quantityButton}
-                  >
-                    -
-                  </button>
-                  <span className={styles.quantityDisplay}>{quantity}</span>
-                  <button
-                    onClick={increaseQuantity}
-                    className={styles.quantityButton}
-                  >
-                    +
-                  </button>
-                </div> */}
+                      <div className={styles.quantitySelector}>
+                        <button
+                          onClick={decreaseQuantity}
+                          className={styles.quantityButton}
+                        >
+                          -
+                        </button>
+                        <span className={styles.quantityDisplay}>
+                          {quantity}
+                        </span>
+                        <button
+                          onClick={increaseQuantity}
+                          className={styles.quantityButton}
+                        >
+                          +
+                        </button>
+                      </div>
                       {/* {!!availableQuantity &&
                   (availableQuantityExceeded || availableQuantity < 10) && (
                     <span className={styles.stockWarning}>
@@ -166,13 +167,13 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                     </span>
                   )} */}
                     </div>
-                    {/* <div className={styles.btnContainer}>
-                <AddToCartButton
-                  product={product}
-                  selectedOptions={selectedOptions}
-                  quantity={quantity}
-                />
-              </div> */}
+                    <div className={styles.btnContainer}>
+                      <AddToCartButton
+                        product={product}
+                        selectedOptions={selectedOptions}
+                        quantity={quantity}
+                      />
+                    </div>
                   </div>
 
                   {product.description && (
@@ -187,6 +188,18 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                   Out of stock
                 </button>
               )}
+              <CollapsibleSection
+                title='Warranty'
+                content='Your investment in CHUXLY headphones is backed by our unwavering commitment to quality. Every purchase comes with a 90-day warranty, ensuring your audio journey is supported with peace of mind.'
+              />
+              <CollapsibleSection
+                title='Shipping & delivery'
+                content='Our global shipping network ensures that no matter where you are, your headphones will arrive at your doorstep with swift efficiency. All orders ship next business day.'
+              />
+              <CollapsibleSection
+                title='Support'
+                content='Download the CHUXLY app now – available on Google Play and the Apple Store. For technical support, please visit our Support page.'
+              />
             </div>
           </div>
         </LayoutWrapper>

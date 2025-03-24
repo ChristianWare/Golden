@@ -26,7 +26,7 @@
   z-index: 1;
   pointer-events: none;
   opacity: 1;
-  border-radius: 10px;
+
   transition: all 0.2s ease-in;
 }
 
@@ -35,12 +35,10 @@
   width: 100%;
   height: 445px;
   border: 1px solid var(--white);
-  border-radius: 10px;
 }
 
 .img {
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .imgContainer:hover .imgOverlay {

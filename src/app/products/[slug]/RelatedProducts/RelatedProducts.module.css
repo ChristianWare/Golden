@@ -1,6 +1,11 @@
+.heading {
+  color: var(--brown);
+}
+
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
   margin-top: 3rem;
   border-top: 1px solid var(--border);
   border-left: 1px solid var(--border);

@@ -50,7 +50,7 @@
   justify-content: space-between;
   gap: 1rem;
   border: 1px solid var(--brown);
-  border-radius: 10px;
+
   padding: 3rem 2rem;
   cursor: pointer;
   width: 100%;
@@ -98,11 +98,9 @@
   position: relative;
   width: 100%;
   height: 600px;
-  border-radius: 10px;
 }
 
 .img {
-  border-radius: 10px;
   object-fit: cover;
   width: 100%;
   height: 100%;

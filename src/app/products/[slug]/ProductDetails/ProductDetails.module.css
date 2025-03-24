@@ -8,6 +8,13 @@
   padding-top: 15rem;
 }
 
+.left {
+      align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+}
+
 .price {
   font-size: 10rem;
   -webkit-text-stroke: 2px var(--brown);
@@ -98,10 +105,15 @@
 .description {
   color: var(--text);
   opacity: 0.8;
-  line-height: 1.5;
+  /* line-height: 1.5; */
+  font-size: 1.1rem;
   margin-top: 2rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.description p {
+  font-size: 1.1rem;
 }
 
 .description li {
@@ -110,8 +122,10 @@
 }
 
 .quantityInfoBox {
-  gap: 2rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quantityInfo {
@@ -131,33 +145,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ccc;
+  border: 1px solid var(--brown);
   width: max-content;
-  background-color: var(--gray);
-  border-radius: 50px;
-  padding: 1rem;
+  white-space: nowrap;
+  user-select: none;
+  display: inline-block;
+  padding: 0.7rem;
+  position: relative;
+  left: 1px;
 }
 
 .quantityButton {
   background: none;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   cursor: pointer;
-  font-size: 1.25rem;
-}
-
-.quantityButton:hover {
-  background-color: #f0f0f0;
+  font-size: 1.6rem;
+  font-family: var(--SuisseIntlMonoRegular);
 }
 
 .quantityDisplay {
-  padding: 0.5rem 1rem;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  font-size: 1rem;
-  min-width: 2rem;
   text-align: center;
   font-variant-numeric: tabular-nums;
+  font-family: var(--SuisseIntlMonoRegular);
 }
 
 .stockWarning {

@@ -1,0 +1,50 @@
+.section {
+  border-bottom: 1px solid var(--olive);
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--brown);
+  letter-spacing: .5px;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--brown);
+  user-select: none;
+  transition: all 0.7s ease;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.7s ease;
+  opacity: 0;
+  padding-top: 1rem;
+}
+
+.content p {
+  color: var(--text);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.contentOpen {
+  max-height: 500px; /* Set a max-height large enough to fit the content */
+  opacity: 1;
+  transition: all 0.7s ease;
+}

@@ -128,7 +128,7 @@
   border: 1px solid var(--brown);
 }
 
-.tan .dot1,
+/* .tan .dot1,
 .tan .dot2,
 .tan .dot3,
 .tan .dot4 {
@@ -138,14 +138,14 @@
 .tan:hover {
   background-color: var(--olive);
   color: var(--tan);
-}
+} */
 
-.tan:hover .dot1,
+/* .tan:hover .dot1,
 .tan:hover .dot2,
 .tan:hover .dot3,
 .tan:hover .dot4 {
   background-color: var(--tan);
-}
+} */
 
 .olive {
   background-color: var(--olive);
@@ -153,7 +153,7 @@
   border: 1px solid var(--brown);
 }
 
-.olive:hover {
+/* .olive:hover {
   color: var(--brown);
   background-color: var(--tan);
 }
@@ -170,7 +170,7 @@
 .olive:hover .dot3,
 .olive:hover .dot4 {
   background-color: var(--brown);
-}
+} */
 
 .navBtn {
   padding: 1rem 3rem;

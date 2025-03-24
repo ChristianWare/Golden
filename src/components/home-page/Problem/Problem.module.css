@@ -14,8 +14,6 @@
   color: var(--lightBlue);
 }
 
-
-
 .headingii {
   color: var(--white);
   line-height: 120%;
@@ -45,7 +43,6 @@
   gap: 7rem;
   padding: 3rem;
   background-color: var(--tan2);
-  border-radius: 10px;
 }
 
 .indexInfo {

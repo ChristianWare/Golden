@@ -6,8 +6,8 @@ import SmoothScroll from "../components/shared/SmoothScroll/SmoothScroll";
 import { Nav } from "@/components/shared/Nav/Nav";
 import Footer from "@/components/shared/Footer/Footer";
 import Spotlight from "@/components/home-page/Spotlight/Spotlight";
-// import ReactQueryProvider from "./ReactQueryProvider";
-// import { Toaster } from "react-hot-toast";
+import ReactQueryProvider from "./ReactQueryProvider";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${PPFormulaConsensedExtrabold.variable} ${SuisseIntlMonoRegular.variable}`}
       >
-        {/* <ReactQueryProvider>
+        <ReactQueryProvider>
           <Toaster
             position='bottom-right'
             toastOptions={{
@@ -53,8 +53,7 @@ export default function RootLayout({
               },
             }}
           />
-          <SmoothScroll>
-            <Nav /> */}
+        
         <SmoothScroll>
           <Nav />
           {children}
@@ -62,8 +61,7 @@ export default function RootLayout({
 
           <Footer />
         </SmoothScroll>
-        {/* </SmoothScroll> */}
-        {/* </ReactQueryProvider> */}
+        </ReactQueryProvider>
       </body>
     </html>
   );

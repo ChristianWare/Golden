@@ -27,7 +27,7 @@ export default function AddToCartButton({
           quantity,
         })
       }
-      btnType='primary'
+      btnType='yellow'
       text='Add To Cart'
       {...props}
       // className={`${styles.btn} ${styles.pulseWrapper}`}

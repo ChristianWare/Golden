@@ -44,7 +44,6 @@
 }
 
 .contentChildren {
-  border-radius: 10px;
   background-color: var(--lightTan);
   padding: 10rem;
   width: 65%;

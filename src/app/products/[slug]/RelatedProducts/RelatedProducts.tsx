@@ -27,7 +27,7 @@ export default async function RelatedProducts({
       <div className={styles.content}>
         <h2 className={styles.heading}>Related </h2>
         <div className={styles.bottom}>
-          {relatedProducts.map((product) => (
+          {relatedProducts.slice(0, 3).map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
         </div>
