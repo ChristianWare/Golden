@@ -26,7 +26,7 @@ export default function ProductCard({ product }: Props) {
             mediaIdentifier={mainImage?.url}
             alt={mainImage?.altText}
             width={300}
-            height={200}
+            height={300}
             scaletofill={true}
             className={styles.img}
           />
