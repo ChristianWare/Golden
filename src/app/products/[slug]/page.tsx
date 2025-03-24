@@ -54,9 +54,7 @@ export default async function ProductPage({ params }: PageProps) {
 
   return (
     <main>
-      {/* <LayoutWrapper> */}
-        <ProductDetails product={product} />
-      {/* </LayoutWrapper> */}
+      <ProductDetails product={product} />
       <ParallaxArea />
       <RelatedProducts productId={product._id} />
     </main>

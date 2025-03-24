@@ -6,9 +6,10 @@
 
 .top {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .detailsBox {
@@ -19,7 +20,7 @@
 }
 
 .inStock {
-  border: 1px solid var(--border);
+  border: 1px solid var(--olive);
   border-radius: 50px;
   padding: 0.3rem 1.2rem;
   font-size: 1.4rem;
@@ -39,8 +40,10 @@
 }
 
 .price {
+  color: var(--brown);
   font-size: 2.5rem;
   line-height: 1;
+  font-family: var(--PPFormulaConsensedExtrabold);
 }
 
 .strikethrough {

@@ -39,19 +39,21 @@ export default function ProductOptions({
                       key={sizeValue || `option-${index}`}
                       className={styles.sizeButtonContainer}
                     >
-                      <FalseButton
-                        text={sizeValue}
-                        btnType={isSelected ? "primaryii" : "primaryiii"}
-                        onClick={() => {
-                          if (!isDisabled) {
-                            setSelectedOptions({
-                              ...selectedOptions,
-                              [option.name || ""]: sizeValue,
-                            });
-                          }
-                        }}
-                        disabled={isDisabled}
-                      />
+                      <div className={styles.btnContainer}>
+                        <FalseButton
+                          text={sizeValue}
+                          btnType={isSelected ? "olive" : "tan"}
+                          onClick={() => {
+                            if (!isDisabled) {
+                              setSelectedOptions({
+                                ...selectedOptions,
+                                [option.name || ""]: sizeValue,
+                              });
+                            }
+                          }}
+                          disabled={isDisabled}
+                        />
+                      </div>
                     </div>
                   );
                 })

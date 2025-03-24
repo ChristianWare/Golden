@@ -62,16 +62,114 @@
   border: 1px solid var(--red);
 }
 
-.secondary {
-  color: var(--white);
-  border: 1px solid var(--gold);
-  background-color: var(--darkGray);
-  border-radius: 50px;
+.brown {
+  background-color: var(--brown);
+  color: var(--tan);
+  border: 1px solid var(--brown);
 }
 
-.secondary:hover {
-  color: var(--black);
-  background-color: var(--white);
+.brown:hover {
+  background-color: var(--yellow);
+  color: var(--brown);
+}
+
+.brown:hover .dot1,
+.brown:hover .dot2,
+.brown:hover .dot3,
+.brown:hover .dot4 {
+  background-color: var(--brown);
+}
+
+.yellow {
+  background-color: var(--yellow);
+  border: 1px solid var(--brown);
+  color: var(--brown);
+}
+
+.yellow:hover {
+  background-color: var(--brown);
+  color: var(--yellow);
+}
+
+.yellow .dot1,
+.yellow .dot2,
+.yellow .dot3,
+.yellow .dot4 {
+  background-color: var(--brown);
+}
+
+.yellow:hover .dot1,
+.yellow:hover .dot2,
+.yellow:hover .dot3,
+.yellow:hover .dot4 {
+  background-color: var(--yellow);
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--tan);
+  border: 1px solid var(--blue);
+}
+
+.blue:hover {
+  background-color: var(--tan);
+  color: var(--blue);
+}
+
+.blue:hover .dot1,
+.blue:hover .dot2,
+.blue:hover .dot3,
+.blue:hover .dot4 {
+  background-color: var(--blue);
+}
+
+.tan {
+  background-color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.tan .dot1,
+.tan .dot2,
+.tan .dot3,
+.tan .dot4 {
+  background-color: var(--brown);
+}
+
+.tan:hover {
+  background-color: var(--olive);
+  color: var(--tan);
+}
+
+.tan:hover .dot1,
+.tan:hover .dot2,
+.tan:hover .dot3,
+.tan:hover .dot4 {
+  background-color: var(--tan);
+}
+
+.olive {
+  background-color: var(--olive);
+  color: var(--tan);
+  border: 1px solid var(--brown);
+}
+
+.olive:hover {
+  color: var(--brown);
+  background-color: var(--tan);
+}
+
+.olive .dot1,
+.olive .dot2,
+.olive .dot3,
+.olive .dot4 {
+  background-color: var(--tan);
+}
+
+.olive:hover .dot1,
+.olive:hover .dot2,
+.olive:hover .dot3,
+.olive:hover .dot4 {
+  background-color: var(--brown);
 }
 
 .navBtn {

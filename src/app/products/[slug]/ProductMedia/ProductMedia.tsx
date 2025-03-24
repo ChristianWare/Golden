@@ -1,49 +1,49 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
 import styles from "./ProductMedia.module.css";
 import WixImage from "@/components/shared/WixImage";
 import { products } from "@wix/stores";
 import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
-import Arrow from "../../../../../public/icons/leftArrow.svg";
+// import Arrow from "../../../../../public/icons/leftArrow.svg";
 
 interface ProductMediaProps {
   media: products.MediaItem[] | undefined;
 }
 
 export default function ProductMedia({ media }: ProductMediaProps) {
-  // Filter out the first image from the media array
-  const filteredMedia = media ? media.slice(1) : [];
+  // Change initial index to 0 to always start with the first image
+  // const initialIndex = 0;
 
+  // Fix the useState declaration
   const [selectedMedia, setSelectedMedia] = useState<
     products.MediaItem | undefined
-  >(filteredMedia.length > 0 ? filteredMedia[0] : undefined);
+  >(media && media.length > 0 ? media[0] : undefined);
 
   useEffect(() => {
-    if (filteredMedia.length) {
-      setSelectedMedia(filteredMedia[0]);
+    if (media?.length) {
+      // Always use index 0 (first image)
+      setSelectedMedia(media[0]);
     }
   }, [media]);
 
-  if (!filteredMedia.length) return null;
+  if (!media?.length) return null;
 
   const handleNext = () => {
-    if (!selectedMedia || !filteredMedia.length) return;
-    const currentIndex = filteredMedia.findIndex(
+    if (!selectedMedia || !media?.length) return;
+    const currentIndex = media.findIndex(
       (item) => item._id === selectedMedia._id
     );
-    const nextIndex = (currentIndex + 1) % filteredMedia.length;
-    setSelectedMedia(filteredMedia[nextIndex]);
+    const nextIndex = (currentIndex + 1) % media.length;
+    setSelectedMedia(media[nextIndex]);
   };
 
   const handlePrevious = () => {
-    if (!selectedMedia || !filteredMedia.length) return;
-    const currentIndex = filteredMedia.findIndex(
+    if (!selectedMedia || !media?.length) return;
+    const currentIndex = media.findIndex(
       (item) => item._id === selectedMedia._id
     );
-    const previousIndex =
-      (currentIndex - 1 + filteredMedia.length) % filteredMedia.length;
-    setSelectedMedia(filteredMedia[previousIndex]);
+    const previousIndex = (currentIndex - 1 + media.length) % media.length;
+    setSelectedMedia(media[previousIndex]);
   };
 
   const swipeHandlers = useSwipeable({
@@ -65,7 +65,7 @@ export default function ProductMedia({ media }: ProductMediaProps) {
             mediaIdentifier={selectedImage.url}
             alt={selectedImage.altText || "Product Image"}
             // scaletofill={false}
-            width={900}
+            width={700}
             height={900}
             className={styles.img}
           />
@@ -77,33 +77,6 @@ export default function ProductMedia({ media }: ProductMediaProps) {
             />
           </video>
         ) : null}
-
-        <div className={styles.circleContainer}>
-          {filteredMedia.map((_, index) => (
-            <span
-              key={index}
-              className={`${styles.circle} ${
-                filteredMedia[index]._id === selectedMedia?._id
-                  ? styles.activeCircle
-                  : ""
-              }`}
-            />
-          ))}
-        </div>
-        <div className={styles.arrowsContainer}>
-          <button
-            className={`${styles.arrowButton} ${styles.leftArrow}`}
-            onClick={handlePrevious}
-          >
-            <Arrow className={styles.arrow} />
-          </button>
-          <button
-            className={`${styles.arrowButton} ${styles.rightArrow}`}
-            onClick={handleNext}
-          >
-            <Arrow className={`${styles.arrow} ${styles.arrowReverse}`} />
-          </button>
-        </div>
       </div>
     </div>
   );

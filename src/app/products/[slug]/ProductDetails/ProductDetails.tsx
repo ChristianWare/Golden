@@ -7,9 +7,9 @@ import { checkInStock, findVariant, formatCurrency } from "@/lib/utils";
 import ProductMedia from "../ProductMedia/ProductMedia";
 import ProductPrice from "../ProductPrice/ProductPrice";
 import ProductOptions from "../ProductOptions/ProductOptions";
-import Plus from "../../../../../public/icons/plus.svg";
 import RotatingText from "@/components/home-page/RotatingText/RotatingText";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
+import DynamicParallax from "@/components/shared/DynamicParallax/DynamicParallax";
 // import DynamicParallax from "@/components/shared/DynamicParallax/DynamicParallax";
 // import AddToCartButton from "@/components/shared/AddToCartButton/AddToCartButton";
 
@@ -77,82 +77,74 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
         <RotatingText text='Honey • Honey • Honey • Honey • Honey • Honey •' />
         <span className={styles.price}>{getFormattedPrice(product)}</span>
         <h1 className={styles.heading}>{product.name}</h1>
-        {/* <DynamicParallax
+        <DynamicParallax
           src={
             product.media?.items
               ? product.media.items[product.media.items.length - 1]?.image
                   ?.url || ""
               : ""
           }
-        />{" "} */}
+        />{" "}
       </div>
-      <LayoutWrapper>
-        <div className={styles.container}>
-          <div className={styles.left}>
-            <div className={styles.productMediaContainer}>
-              <ProductMedia media={selectedMedia} />
-            </div>
-          </div>
-          <div className={styles.right}>
-            {/* <h1 className={styles.productName}>{product.name}</h1> */}
-
-            <ProductPrice product={product} selectedVariant={selectedVariant} />
-
-            <div className={styles.infoBoxes}>
-              <div className={styles.infoBox}>
-                <span className={styles.infoTitle}>Size Guide</span>
-                <Plus className={styles.icon} />
-              </div>
-              <div className={styles.infoBoxii}>
-                <span className={styles.infoTitle}>Click and Collect</span>
-                <Plus className={styles.icon} />
+      <div className={styles.parent}>
+        <LayoutWrapper>
+          <div className={styles.container}>
+            <div className={styles.left}>
+              <div className={styles.productMediaContainer}>
+                <ProductMedia media={selectedMedia} />
               </div>
             </div>
+            <div className={styles.right}>
+              <h2 className={styles.productName}>{product.name}</h2>
+              <ProductPrice
+                product={product}
+                selectedVariant={selectedVariant}
+              />
 
-            {!!product.additionalInfoSections?.length && (
-              <>
-                <p
-                  className={styles.readMore}
-                  onClick={() => setShowMore(!showMore)}
-                >
-                  {showMore ? "- Show Less" : "+ Read More"}
-                </p>
-                <div
-                  className={`${styles.infoContainer} ${
-                    showMore ? styles.show : ""
-                  }`}
-                >
-                  {product.additionalInfoSections.map((section) => (
-                    <div key={section.title}>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: section.description || "",
-                        }}
-                        className={styles.description}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
+              {!!product.additionalInfoSections?.length && (
+                <>
+                  <p
+                    className={styles.readMore}
+                    onClick={() => setShowMore(!showMore)}
+                  >
+                    {showMore ? "- Show Less" : "+ Read More"}
+                  </p>
+                  <div
+                    className={`${styles.infoContainer} ${
+                      showMore ? styles.show : ""
+                    }`}
+                  >
+                    {product.additionalInfoSections.map((section) => (
+                      <div key={section.title}>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: section.description || "",
+                          }}
+                          className={styles.description}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
 
-            <ProductOptions
-              product={product}
-              selectedOptions={selectedOptions}
-              setSelectedOptions={setSelectedOptions}
-            />
+              <ProductOptions
+                product={product}
+                selectedOptions={selectedOptions}
+                setSelectedOptions={setSelectedOptions}
+              />
 
-            {inStock ? (
-              <>
-                {!!availableQuantity &&
-                  (availableQuantityExceeded || availableQuantity < 10) && (
-                    <span className={styles.stockWarning}>
-                      Only {availableQuantity} left in stock
-                    </span>
-                  )}
-                <div className={styles.quantityInfoBox}>
-                  <div className={styles.quantityInfo}>
-                    {/* <div className={styles.quantitySelector}>
+              {inStock ? (
+                <>
+                  {!!availableQuantity &&
+                    (availableQuantityExceeded || availableQuantity < 10) && (
+                      <span className={styles.stockWarning}>
+                        Only {availableQuantity} left in stock
+                      </span>
+                    )}
+                  <div className={styles.quantityInfoBox}>
+                    <div className={styles.quantityInfo}>
+                      {/* <div className={styles.quantitySelector}>
                   <button
                     onClick={decreaseQuantity}
                     className={styles.quantityButton}
@@ -167,35 +159,38 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                     +
                   </button>
                 </div> */}
-                    {/* {!!availableQuantity &&
+                      {/* {!!availableQuantity &&
                   (availableQuantityExceeded || availableQuantity < 10) && (
                     <span className={styles.stockWarning}>
                       Only {availableQuantity} left in stock
                     </span>
                   )} */}
-                  </div>
-                  {/* <div className={styles.btnContainer}>
+                    </div>
+                    {/* <div className={styles.btnContainer}>
                 <AddToCartButton
                   product={product}
                   selectedOptions={selectedOptions}
                   quantity={quantity}
                 />
               </div> */}
-                </div>
+                  </div>
 
-                {product.description && (
-                  <div
-                    dangerouslySetInnerHTML={{ __html: product.description }}
-                    className={styles.description}
-                  />
-                )}
-              </>
-            ) : (
-              <button className={styles.outOfStockButton}>Out of stock</button>
-            )}
+                  {product.description && (
+                    <div
+                      dangerouslySetInnerHTML={{ __html: product.description }}
+                      className={styles.description}
+                    />
+                  )}
+                </>
+              ) : (
+                <button className={styles.outOfStockButton}>
+                  Out of stock
+                </button>
+              )}
+            </div>
           </div>
-        </div>
-      </LayoutWrapper>
+        </LayoutWrapper>
+      </div>
     </>
   );
 }

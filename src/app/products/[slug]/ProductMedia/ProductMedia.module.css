@@ -7,8 +7,11 @@
 
 .imgContainer {
   width: 100%;
-  height: 100%;
+  height: 700px;
   position: relative;
+  padding: 3rem;
+  background-color: var(--lightTan);
+  border-radius: 10px;
 }
 
 .img {
