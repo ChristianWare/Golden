@@ -2,17 +2,19 @@
   --black: #151515;
   --white: #ffffff;
   --lightTan: #faf6ee;
-  --lightOlive: #F1F0EA ;
+  --lightOlive: #f1f0ea;
   --tan: #e8e0d3;
   --gold: #cc9a49;
   --lightBrown: #cebfaa;
   --brown: #443627;
   --yellow: #efb30f;
   --olive: #9a9a7c;
+  --olive2: #9d8e2b;
   --blue: #1d3d56;
   --lightBlue: #4a7b9c;
   --text: #545454;
   --teal: #31877f;
+  --pink: #D1B6A8;
 }
 
 * {

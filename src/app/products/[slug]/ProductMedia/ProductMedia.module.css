@@ -109,3 +109,10 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+@media screen and (max-width: 568px) {
+  .imgContainer {
+    height: 300px;
+    padding: 0rem;
+  }
+}

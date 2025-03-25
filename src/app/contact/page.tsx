@@ -1,15 +1,11 @@
+import ContactHero from "@/components/contact-page/ContactHero/ContactHero";
+import ContactSection from "@/components/contact-page/ContactSection/ContactSection";
+
 export default function ContactPage() {
   return (
     <main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Contact Page</h1>
+      <ContactHero />
+      <ContactSection />
     </main>
   );
 }
