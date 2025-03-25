@@ -16,6 +16,7 @@
   display: block;
   font-family: var(--SuisseIntlMonoRegular);
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .container.hide {
@@ -34,5 +35,12 @@
   .container {
     position: relative;
     top: -3px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    position: relative;
+    top: -5px;
   }
 }

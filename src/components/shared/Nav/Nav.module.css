@@ -35,10 +35,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .header {
-    padding-top: 6rem;
-  }
-
   .navbar {
     padding: 4rem 2.5rem;
     padding-bottom: 1rem;
