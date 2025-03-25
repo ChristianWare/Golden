@@ -8,8 +8,6 @@
   z-index: 9999;
   width: 100%;
   background-color: var(--tan);
-  /* padding-top: 1rem; */
-  /* padding-bottom: 0.5rem; */
   border-bottom: 1px solid var(--blue);
   display: flex;
   flex-direction: column;

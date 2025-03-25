@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in;
-  margin-top: -.4rem;
+  margin-top: -0.4rem;
 }
 
 .copy {
@@ -28,4 +28,11 @@
   transform: translate(0%, 0%);
   opacity: 1;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    top: -3px;
+  }
 }
