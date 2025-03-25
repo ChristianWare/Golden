@@ -13,22 +13,23 @@ const data = [
   {
     id: 3,
     animation: Img1,
-    title: "Our Award Winning Tonics",
-    desc: "Best soft drink innovation 2025",
+    title: "Our Award-Winning Honey",
+    desc: "Voted Best Natural Sweetener of 2025",
   },
   {
     id: 1,
     animation: Img2,
-    title: "Alchol Free Flammarion",
-    desc: "New: Book from the founder of JNPR",
+    title: "The Golden Story",
+    desc: "New: A heartfelt book from the founder of Golden Drips",
   },
   {
     id: 2,
     animation: Img3,
-    title: "RHHM No. 1",
-    desc: "Discover our new alcohol-free spirit",
+    title: "Golden Reserve No. 1",
+    desc: "Discover our latest small-batch, artisan honey blend",
   },
 ];
+
 
 export default function ProductPreviewSection() {
   const [activeIndex, setActiveIndex] = useState(0);

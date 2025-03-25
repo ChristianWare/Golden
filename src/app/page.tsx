@@ -20,6 +20,10 @@ export default function Home() {
       <ValueProp />
       <ProductPreviewSection />
       <CategorySection />
+      <DynamicProductCollection
+        title='Hand Soaps'
+        category='featured-products'
+      />
       <GridSection />
       <ReviewSection />
     </main>

@@ -4,7 +4,7 @@ import { getCollectionBySlug } from "@/wix-api/collections";
 import { queryProducts } from "@/wix-api/products";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import ProductCard from "@/components/shared/ProductCard/ProductCard";
-import Burst from "../../../../public/icons/burst.svg";
+import Burst from "../../../../public/icons/bee2.svg";
 
 interface Props {
   title: string;

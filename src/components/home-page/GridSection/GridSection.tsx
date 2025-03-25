@@ -15,10 +15,10 @@ const GridSection = () => {
             <div className={styles.boxContainer}>
               <div className={styles.topContainer}>
                 <div className={styles.blend}>
-                  <h3 className={styles.headingii}>About Us</h3>
-                  <p className={styles.copyii}>
+                  <h3 className={styles.headingii}>Honey Comb</h3>
+                  {/* <p className={styles.copyii}>
                     ~ Learn more about our history here ~
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className={styles.box1}></div>

@@ -47,12 +47,13 @@ export default async function CategorySection() {
           </div>
           <div className={styles.bottom2}>
             <p className={styles.copy}>
-              Making good cocktails is a real challenge. Without alcohol, the
-              balance must be even more carefully crafted so that the alcohol
-              doesnt mask certain deficiencies or add whats called a kick, the
-              strength to enhance everything. The creations you can make with
-              JNPR have nothing to envy their alcoholic counterparts: length in
-              the mouth, consistency, originality...
+              Creating delicious drinks is no easy task. Without refined sugars
+              or artificial additives, every ingredient has to shine—and honey
+              brings that natural balance. With Golden Drips Honey, you don’t
+              need alcohol to craft something memorable. Our honey adds depth,
+              richness, and a smooth finish that rivals even the most complex
+              cocktails. Full of character, naturally sweet, and endlessly
+              versatile—there’s nothing missing, only more to enjoy.
             </p>
             <div className={styles.btnContainer}>
               <Button btnType='brown' href='/' text='Shop All' />

@@ -29,7 +29,7 @@ export const getCollections = cache(
     const collections = await wixClient.collections
       .queryCollections()
       .ne("_id", "00000000-000000-000000-000000000001") // exclude all products
-      .ne("_id", "6aab45f0-0c5c-1652-eea3-4e9f0ed352cb") // exclude featured products
+      .ne("_id", "ad0f827d-ed93-f2df-acd0-d1217420c816") // exclude featured products
       .ne("_id", "689b3443-8426-58a0-a384-97f7bc9788ea") // exclude best sellers
       .find();
 

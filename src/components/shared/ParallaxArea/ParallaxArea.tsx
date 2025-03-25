@@ -16,13 +16,15 @@ export default function ParallaxArea() {
           <div className={styles.contentChildren}>
             <Bee className={styles.icon} />
             <h2 className={styles.heading}>
-              Finally, something alcohol-free that tastes good
+              Finally, a sweet indulgence that truly delights!
             </h2>
             <p className={styles.copy}>
-              Our mission since 2020? <br /> To offer festive cocktails, with
-              little or no sugar, that wont frustrate or bore, and above all,
-              allow you to share good times with your loved ones, no matter
-              whats in the glass, as long as the taste is there.
+              Our mission since 2020? <br /> Golden Drips Honey has
+              been on a mission to provide pure, natural honey that never feels
+              dull or overdone—and that’s perfect for sharing with the people
+              who matter most. Whether it’s a drizzle in your tea or a splash in
+              a festive mocktail, as long as the flavor shines through, the
+              moment is worth celebrating.
             </p>
             <Bee className={styles.icon2} />
           </div>

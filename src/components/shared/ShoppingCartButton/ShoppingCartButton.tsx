@@ -16,6 +16,7 @@ import Link from "next/link";
 import WixImage from "../WixImage";
 import Cart from "../../../../public/icons/cart.svg";
 import Trash from "../../../../public/icons/trash.svg";
+import FalseButton from "../FalseButton/FalseButton";
 
 interface ShoppingCartButtonProps {
   initialData: currentCart.Cart | null;
@@ -106,19 +107,17 @@ export default function ShoppingCartButton({
                 </div>
                 <p>*** Shipping and taxes calculated at checkout</p>
                 <div className={styles.btnContainer}>
-                  <button
+                  <FalseButton
+                    btnType='brown'
+                    text='Checkout Not Available'
                     onClick={handleCheckout}
                     disabled={true}
-                    className={styles.checkoutBox}
-                  >
-                    Checkout Not Available
-                  </button>
-                  <button
+                  />
+                  <FalseButton
+                    btnType='yellow'
+                    text='Kepp Shopping'
                     onClick={() => setModalOpen(false)}
-                    className={styles.checkoutBoxii}
-                  >
-                    Keep Shopping
-                  </button>
+                  />
                 </div>
               </div>
             </div>

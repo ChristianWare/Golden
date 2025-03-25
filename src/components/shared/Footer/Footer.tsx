@@ -6,33 +6,33 @@ import RotatingText from "@/components/home-page/RotatingText/RotatingText";
 const data = [
   {
     id: 1,
-    title: "E-Shop",
+    title: "Shop",
     options: [
       {
         id: 1.1,
-        option: "JNPR range",
+        option: "All Honey Varieties",
       },
       {
         id: 1.2,
-        option: "Boxes",
+        option: "Gift Boxes",
       },
       {
         id: 1.3,
-        option: "Sugar-free selection",
+        option: "Raw & Unfiltered",
       },
       {
         id: 1.4,
-        option: "Accessories & tonics",
+        option: "Accessories & Tools",
       },
       {
         id: 1.5,
-        option: "Recipe booklets",
+        option: "Honey Recipe Booklets",
       },
     ],
   },
   {
     id: 2,
-    title: "Learn More",
+    title: "Discover",
     options: [
       {
         id: 2.1,
@@ -40,11 +40,11 @@ const data = [
       },
       {
         id: 2.2,
-        option: "Cocktails",
+        option: "Recipes",
       },
       {
         id: 2.3,
-        option: "History",
+        option: "Our Story",
       },
       {
         id: 2.4,
@@ -54,27 +54,28 @@ const data = [
   },
   {
     id: 3,
-    title: "Contact",
+    title: "Connect",
     options: [
       {
         id: 3.1,
-        option: "hello@jnprspirits.com",
+        option: "hello@goldendrips.com",
       },
       {
         id: 3.2,
-        option: "Professionals",
+        option: "Wholesale Inquiries",
       },
       {
         id: 3.3,
-        option: "My account",
+        option: "My Account",
       },
       {
         id: 3.4,
-        option: "Join the team",
+        option: "Careers",
       },
     ],
   },
 ];
+
 
 const data2 = [
   {
@@ -83,17 +84,18 @@ const data2 = [
   },
   {
     id: 5,
-    title: "General Conditions of Sale",
+    title: "Terms & Conditions",
   },
   {
     id: 6,
-    title: "Cookies",
+    title: "Cookie Preferences",
   },
   {
     id: 7,
-    title: "Legal Notices",
+    title: "Legal Information",
   },
 ];
+
 
 export default function Footer() {
   return (
@@ -104,7 +106,8 @@ export default function Footer() {
           <div className={styles.content}>
             <div className={styles.left}>
               <h3 className={styles.heading}>
-                We promise to send you cocktail recipes that wont get you drunk.
+                Get ready for golden goodness—recipes, inspiration, and
+                everything honey.
               </h3>
               <p className={styles.copy}>
                 A surprise for your first order by subscribing to the newsletter

@@ -7,19 +7,20 @@ const data = [
   {
     id: 1,
     title: "1.",
-    copy: "Tailored options for every honey business, from small-scale to large-scale operations.",
+    copy: "Delicious honey options crafted for every lifestyle—from daily drizzlers to gourmet connoisseurs.",
   },
   {
     id: 2,
     title: "2.",
-    copy: "Effortless inventory management and traceability for your honey products.",
+    copy: "We keep things simple—fresh, traceable honey delivered straight to your door with ease.",
   },
   {
     id: 3,
     title: "3.",
-    copy: "From hive to honey pot, we streamline your processes for maximum efficiency.",
+    copy: "From hive to home, our process ensures you enjoy golden goodness in every drop.",
   },
 ];
+
 
 export default function ValueProp() {
   return (

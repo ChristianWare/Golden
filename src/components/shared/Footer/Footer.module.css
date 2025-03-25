@@ -27,12 +27,14 @@
 
 .heading {
   font-size: 2.5rem;
+  color: var(--brown);
 }
 
 .copy {
   font-size: 1.1rem;
   text-transform: uppercase;
   width: 80%;
+  color: var(--brown);
 }
 
 .email {
@@ -43,6 +45,7 @@
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem;
+  color: var(--brown);
 }
 
 .icon {

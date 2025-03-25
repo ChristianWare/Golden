@@ -19,8 +19,8 @@ export default function ReviewSection() {
             They talk about it better than we do.
           </h2>
           <h3 className={styles.review}>
-            &ldquo;Too often the absence of alcohol is compensated by the
-            addition of sugars to give more flavor, here there is no need.&quot;
+            &ldquo;Too often, extra sugar is added just to make things taste
+            better—but with our honey, nature takes care of that.&quot;
           </h3>
           <div className={styles.btnContainer}>
             <Button btnType='blue' text='discover our products' href='/' />
