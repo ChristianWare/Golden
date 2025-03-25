@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  top: 43;
+  top: 26;
   left: 0;
   right: 0;
   left: 50%;
@@ -8,12 +8,12 @@
   z-index: 9999;
   width: 100%;
   background-color: var(--tan);
+  border-top: 70px solid var(--blue);
   border-bottom: 1px solid var(--blue);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .navBar {
@@ -26,6 +26,20 @@
   margin-left: auto;
   margin-right: auto;
   padding: 1rem 3rem;
+  position: relative;
+}
+
+.navBar::after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "guaranteed shipping within 48 working hours 🍸 more than 100 recipes to discover";
+  top: -18px;
+  color: var(--tan);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  
 }
 
 @media screen and (max-width: 968px) {
