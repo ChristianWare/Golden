@@ -68,7 +68,6 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
     }
   };
 
-
   return (
     <>
       <div className={styles.top}>
@@ -188,16 +187,16 @@ export default function ProductDetails({ product }: ProductDetailsProps) {
                 </button>
               )}
               <CollapsibleSection
-                title='Warranty'
-                content='Your investment in CHUXLY headphones is backed by our unwavering commitment to quality. Every purchase comes with a 90-day warranty, ensuring your audio journey is supported with peace of mind.'
+                title='Quality Guarantee'
+                content='Your purchase from Golden Drips Honey is more than just honey—its a promise of purity and craftsmanship. Every jar is backed by our commitment to quality, with a 90-day satisfaction guarantee for your peace of mind.'
               />
               <CollapsibleSection
                 title='Shipping & delivery'
-                content='Our global shipping network ensures that no matter where you are, your headphones will arrive at your doorstep with swift efficiency. All orders ship next business day.'
+                content='We ship nationwide with care and speed. All orders are processed the next business day, so your golden goodness arrives fresh at your doorstep—wherever you are.'
               />
               <CollapsibleSection
                 title='Support'
-                content='Download the CHUXLY app now – available on Google Play and the Apple Store. For technical support, please visit our Support page.'
+                content='Have questions about your order or our products? Visit our Support page for quick answers or to get in touch with our team. We are here to help make every drop of honey a delight.'
               />
             </div>
           </div>
