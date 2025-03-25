@@ -37,6 +37,7 @@
   z-index: 6;
   color: var(--white);
   font-size: 15vw;
+  white-space: nowrap;
   text-align: center;
   top: 350;
   left: 50%;

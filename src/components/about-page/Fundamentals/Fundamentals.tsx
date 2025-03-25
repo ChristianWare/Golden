@@ -10,12 +10,13 @@ export default function Fundamentals() {
       <div className={styles.imgOverlay} />
       <LayoutWrapper>
         <div className={styles.content}>
-          <h2 className={styles.mainHeading}>The JNPR </h2>
+          <h2 className={styles.mainHeading}>Our Honey </h2>
 
           <div className={styles.contentChildren}>
             <h2 className={styles.heading}>
-              500 juniper plants have been replanted in Normandy since the start
-              of the adventure
+              The name Golden Drips was inspired by the pure, golden streams of
+              raw honey that flow straight from the hive—natures original
+              sweetener and one of its most powerful gifts.
             </h2>
             <p className={styles.copy}>
               JNPR is a name that was chosen in reference to the juniper berry,
@@ -23,15 +24,20 @@ export default function Fundamentals() {
               the JNPR range.
               <br />
               <br />
-              60 first plants were planted in 2020, knowing that the shrubs take
-              3 years to produce the first berries. The project grows with the
-              brand and 500 new plants were planted in March 2023.
+              The first planting effort began in 2020 with 60 flowering shrubs,
+              chosen to support pollinators and strengthen the surrounding
+              ecosystem. These plants typically take a few seasons to fully
+              bloom, but their impact starts right away—feeding bees, enriching
+              the soil, and restoring balance to local biodiversity. In March
+              2023, 500 more were added, and our commitment continues to grow
+              with the brand.
               <br />
               <br />
-              The project will not be self-sufficient at this stage. We ensure
-              the quality and future supply of some of our berries. For our
-              partners, the hedges that are thus created help to combat soil
-              erosion and promote biodiversity.
+              While we dont rely solely on our own crops for honey production,
+              these efforts reflect our deeper mission: to protect the
+              pollinators who make everything possible. For our local partners,
+              these thriving hedgerows also help reduce soil erosion and promote
+              a more sustainable future.
             </p>
           </div>
         </div>

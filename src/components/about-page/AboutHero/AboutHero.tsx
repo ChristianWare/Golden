@@ -28,23 +28,26 @@ export default function AboutHero() {
         </div>
         <LayoutWrapper>
           <p className={styles.copy}>
-            During a trip to the United States, Valérie, the founder,
-            experienced a much more varied range of drinks, with subtle flavors,
-            natural ingredients, and properties that make them true everyday
-            allies. The first thoughts about JNPR then germinated.
+            During a trip through the American Southwest, Valérie, the founder
+            of Golden Drips Honey, discovered a rich variety of natural
+            sweeteners used in everything from home remedies to handcrafted
+            recipes. What stood out most? Pure, unprocessed honey—full of
+            character, subtle floral notes, and incredible versatility in
+            everyday life. The first seeds of Golden Drips began to take root.
             <br />
             <br />
-            Through her research, she discovered that during the 17th century,
-            distilled juniper berry and other plants and spices such as
-            coriander seed were highly sought after, renowned in particular for
-            their medicinal properties.
+            Her research led her deep into the history of honey, tracing its
+            roots back to ancient civilizations where it was prized not just for
+            its taste, but also for its natural healing properties. From
+            soothing teas to skin care remedies, honey was revered as nature’s
+            golden gift.
             <br />
             <br />
-            She met Flavio Angiolillo, a renowned bartender, and together, they
-            reflected on the best way to perpetuate this tradition by setting
-            themselves an additional challenge: maintaining excellent mixology
-            properties, even without alcohol. After months of reading, research,
-            testing, and meetings, JNPR was born.
+            Inspired by this legacy, she began working closely with local
+            beekeepers and natural food artisans to craft something truly
+            special. After months of exploring flavor profiles, testing recipes,
+            and learning from the best, Golden Drips Honey was born—a brand
+            built on purity, purpose, and a passion for all things golden.
           </p>
         </LayoutWrapper>
       </div>

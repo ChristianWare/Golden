@@ -1,5 +1,5 @@
-import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./Art.module.css";
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Flower from "../../../../public/icons/flower.svg";
 
 export default function Art() {
@@ -10,28 +10,29 @@ export default function Art() {
           <h2 className={styles.heading}>
             The Art of
             <br />
-            <span className={styles.span}>Distillation</span>
+            <span className={styles.span}>Harvesting Honey</span>
           </h2>
           <Flower className={styles.icon} />
         </div>
         <div className={styles.bottom}>
           <p className={styles.copy}>
-            Our alcohol-free spirits are the result of meticulous work. In order
-            to impart a length in the mouth and aromatic strength worthy of
-            classic spirits, emphasis has been placed in research on ancestral
-            techniques, particularly that of distillation. The latter, by
-            allowing high heating, allows the extraction of the aromas of all
-            botanicals and spices, even if no alcohol is used in the
-            manufacturing process.
+            Our honey is the result of careful craftsmanship and deep respect
+            for nature’s rhythms. To achieve the richness, depth, and complexity
+            that define Golden Drips, we draw inspiration from age-old methods
+            of harvesting and blending.
             <br />
             <br />
-            For the JNPR collection, the use of a copper Charentais still allows
-            for distillation in small batches.
+            Each batch is made with care—sourced from select hives and harvested
+            in small quantities to preserve purity and flavor. Much like
+            traditional artisans, we focus on technique and timing, allowing the
+            natural properties of the honey to shine through without the need
+            for added sugars or artificial ingredients.
             <br />
             <br />
-            To obtain the desired adult taste, 2 to 5 times more spices than for
-            a classic spirit are used, thus strengthening the aromatic
-            intensity, even without alcohol.
+            To deliver that smooth, layered taste in every jar, we rely on
+            nature’s own complexity: a variety of floral sources, optimal
+            harvesting times, and thoughtful blending—creating a honey that’s
+            anything but ordinary.
           </p>
         </div>
       </LayoutWrapper>

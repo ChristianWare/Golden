@@ -5,26 +5,27 @@ import Button from "@/components/shared/Button/Button";
 const data = [
   {
     id: 1,
-    heading: "Resellers",
-    desc: "Wine merchants, delicatessens, concept stores... our network of resellers is expanding across France.",
+    heading: "Retail Partners",
+    desc: "Specialty food shops, gift boutiques, farmers markets... our network of retail partners is growing across the country.",
     desc2:
-      "We support you by providing sales materials such as recipe cards, postcards, presentation easels, and more.",
+      "We support our stockists with beautiful merchandising tools like tasting cards, display stands, sample jars, and more.",
   },
   {
     id: 2,
-    heading: "Bartenders, chefs & hoteliers",
-    desc: "JNPR on your menu!",
+    heading: "Chefs, Bakers & Hospitality",
+    desc: "Add Golden Drips to your menu!",
     desc2:
-      "We offer a wide range of recipes, from simple to more original, No & Low, to inspire you and perhaps even help you make cocktails.",
+      "From sweet glazes to savory marinades, we offer a variety of recipe inspirations to help you make the most of our honey in your kitchen or establishment.",
   },
   {
     id: 3,
-    heading: "Events",
-    desc: "JNPR at your events!",
+    heading: "Events & Gifting",
+    desc: "Golden Drips at your next event!",
     desc2:
-      "For your guests who are looking to reduce their alcohol consumption, or because they don't drink alcohol.",
+      "Perfect for weddings, corporate gifts, or seasonal gatherings—our honey adds a thoughtful, delicious touch to every occasion.",
   },
 ];
+
 
 export default function ContactHero() {
   return (
@@ -32,7 +33,7 @@ export default function ContactHero() {
       <LayoutWrapper>
         <div className={styles.top}>
           <span className={styles.span}>Contact Us</span>
-          <h1 className={styles.heading}>JNPR for professionals</h1>
+          <h1 className={styles.heading}>Honey for professionals</h1>
           <p className={styles.copy}>
             Thank you for your interest in our brand and product lines. Our team
             is available to answer your questions!

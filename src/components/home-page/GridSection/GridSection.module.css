@@ -280,6 +280,7 @@
       "fourB"
       "fiveB";
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5rem;
   }
 
   .box2,
